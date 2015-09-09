@@ -42,7 +42,7 @@ if ($status == "start"){
     chdir($walletDir);
     echo getcwd() . "\n";
     
-    exec("./".$currentWallet." -datadir=".$dataDir); 
+    exec($currentWallet." -datadir=".$dataDir); 
     print '<h2>The wallet is starting, it could take several minutes before it is available.</h2>';
 
 } 
