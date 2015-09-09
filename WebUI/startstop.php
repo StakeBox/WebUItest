@@ -45,7 +45,7 @@ if ($status == "start"){
 } 
 if ($status == "rescan"){ 
    
-    exec($currentWallet ."-rescan"); 
+    exec($currentWallet -rescan); 
     print '<h2>The wallet is starting with the rescan option, it may take a while before it becomes available again.</h2>';
 
 } 
