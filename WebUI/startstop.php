@@ -2,6 +2,7 @@
 include ("header.php");
 include ("pass.php");
 $walletDir = "/home/stakebox/wallets/".$currentWallet;
+$dataDir = "/home/stakebox/.Hyper;
 ?>
 
 <div style="padding: 5px 30px 0px;">
@@ -41,7 +42,7 @@ if ($status == "start"){
     chdir($walletDir);
     echo getcwd() . "\n";
     
-    exec("DISPLAY=:0 ".$currentWallet); 
+    exec($currentWallet." -".$dataDir); 
     print '<h2>The wallet is starting, it could take several minutes before it is available.</h2>';
 
 } 
