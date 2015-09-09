@@ -1,7 +1,7 @@
 <?php
 include ("header.php");
 include ("pass.php");
-$walletDir = "/home/stakebox/wallets/".$currentWallet
+$walletDir = "/home/stakebox/wallets/".$currentWallet."/".$currentWallet;
 ?>
 
 <div style="padding: 5px 30px 0px;">
@@ -34,17 +34,19 @@ $status = $_POST["status"];
 if ($status == "stop"){
  
     $coin->stop(); 
-    print '<h2>You have stopped the wallet</h2>';
+    print '<h2>You have stopped the wallet, please allow it a minute or so to fully stop before restarting.</h2>';
  
 }  
 if ($status == "start"){ 
    
+    chdir($walletDir);
     exec($currentWallet); 
     print '<h2>The wallet is starting, it could take several minutes before it is available.</h2>';
 
 } 
 if ($status == "rescan"){ 
    
+    chdir($walletDir);
     exec($currentWallet -rescan); 
     print '<h2>The wallet is starting with the rescan option, it may take a while before it becomes available again.</h2>';
 
