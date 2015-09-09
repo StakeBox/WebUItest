@@ -40,7 +40,7 @@ if ($status == "stop"){
 if ($status == "start"){ 
    
     chdir($walletDir);
-    exec($currentWallet); 
+    exec("$currentWallet"); 
     print '<h2>The wallet is starting, it could take several minutes before it is available.</h2>';
 
 } 
