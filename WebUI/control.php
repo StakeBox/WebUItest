@@ -22,6 +22,7 @@ include ("pass.php");
             <a href="allcommands" class='btn btn-default' role='button'>All Commands</a>
             <a href="setpass" class='btn btn-default' role='button'>Change UI Password</a>
             <a href="changecurrency" class='btn btn-default' role='button'>Change Currency</a>
+            <a href="rescan" class='btn btn-default' role='button'>Rescan</a>
          </div><!-- /.row -->
       </div><!-- /.padding -->
 </div><!-- /.well -->
