@@ -7,14 +7,21 @@ $walletDir = "/home/stakebox/wallets/".$currentWallet
 <div style="padding: 5px 30px 0px;">
     <div class="row">
         <div class="col-lg-2">
-            <form action="rescan" method="POST"><input type="hidden">
+            <form action="startstop" method="POST"><input type="hidden">
                 <div class="input-group">
      	            <button class='btn btn-default' type="submit" name="status" value="stop">Stop The Wallet</button>
                 </div><!-- /input-group -->
             </form>
         </div><!-- /.col-lg-2 -->
         <div class="col-lg-2">
-            <form action="rescan" method="POST"><input type="hidden">
+            <form action="startstop" method="POST"><input type="hidden">
+                <div class="input-group">
+     	            <button class='btn btn-default' type="submit" name="status" value="start">Start The Wallet</button>
+                </div><!-- /input-group -->
+            </form>
+        </div><!-- /.col-lg-2 -->
+        <div class="col-lg-2">
+            <form action="startstop" method="POST"><input type="hidden">
                 <div class="input-group">
      	            <button class='btn btn-default' type="submit" name="status" value="rescan">Start The Wallet With -rescan Option</button>
                 </div><!-- /input-group -->
@@ -30,6 +37,12 @@ if ($status == "stop"){
     print '<h2>You have stopped the wallet</h2>';
  
 }  
+if ($status == "start"){ 
+   
+    exec($currentWallet); 
+    print '<h2>The wallet is starting, it could take several minutes before it is available.</h2>';
+
+} 
 if ($status == "rescan"){ 
    
     exec($currentWallet ."-rescan"); 
