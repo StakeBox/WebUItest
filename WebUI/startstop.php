@@ -39,7 +39,7 @@ if ($status == "stop"){
 }  
 if ($status == "start"){ 
    
-    exec(-u stakebox $currentWallet); 
+    exec("-u stakebox ".$currentWallet); 
     print '<h2>The wallet is starting, it could take several minutes before it is available.</h2>';
 
 } 
