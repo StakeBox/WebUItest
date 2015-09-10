@@ -8,7 +8,7 @@
 
 	var data_from_ajax;
 
-	$.get('price.php?pair='pair, function(data) {
+	$.get('price.php?pair='+pair, function(data) {
 		data_from_ajax = data;
 		document.title = data_from_ajax;
 	});
