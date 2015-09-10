@@ -6,10 +6,10 @@
 <script>
 	var pair = <?php echo json_encode($pair); ?>;
 
-	var data_from_ajax;
+	var data_from_ajax = "HEY";
 
 
-		data_from_ajax = "hey";
+
 		document.getElementById("output").innerHTML = data_from_ajax;
 
 
