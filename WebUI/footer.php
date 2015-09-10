@@ -7,9 +7,9 @@
 	var pair = <?php echo json_encode($pair); ?>;
 
 	var data_from_ajax;
-
+	setInterval function() {
 	$.get('price.php?pair='+pair, function(data) {
 		data_from_ajax = data;
 		document.title = data_from_ajax;
-	});
+	}, 10000);
 </script>
