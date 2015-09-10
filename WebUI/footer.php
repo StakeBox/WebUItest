@@ -6,17 +6,12 @@
 <script>
 	var pair = <?php echo json_encode($pair); ?>;
 
-	var data_from_ajax = "HEY";
+	var data_from_ajax;
+
+	$.get('price.php?pair=net-btc', function(data) {
+		data_from_ajax = "hey";
+		document.getElementById("output").innerHTML = data_from_ajax;
+	});
 
 
-
-		document.getElementById("title").innerHTML = data_from_ajax;
-
-
-
-</script>
-<script>
-	var name = "kieran";
-
-	document.getElementById("output").innerHTML = data_from_ajax;
 </script>
