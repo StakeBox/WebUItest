@@ -4,7 +4,17 @@
 		</div><!--.container-->
 </pre></body></html>
 <script>
-		var name = "kieran";
+	var pair = <?php echo json_encode($pair); ?>;
 
-		document.getElementById("output").innerHTML = name;
+	var data_from_ajax;
+
+	$.get('price.php?pair=net-btc', function(data) {
+		data_from_ajax = data;
+	});
+
+	document.title = data_from_ajax:
+
+	var name = "kieran";
+
+	document.getElementById("output").innerHTML = name;
 </script>
