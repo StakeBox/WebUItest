@@ -66,6 +66,14 @@
 		});
 		var pair = <?php echo json_encode($pair); ?>;
 
+		var data_from_ajax;
+
+		$.get('price.php', function(data) {
+			data_from_ajax = data;
+		});
+
+		document.title = data_from_ajax:
+
 	</script>
 </head>
 <body>
