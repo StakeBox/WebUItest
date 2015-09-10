@@ -1,6 +1,7 @@
 <?php 
 include ("header.php");
 include ("pass.php");
+$bal1 = $coin->getbalance();
 ?>
 
 <div class="panel panel-default">
