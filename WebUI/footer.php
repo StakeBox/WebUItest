@@ -3,7 +3,8 @@
 			</footer>
 		</div><!--.container-->
 </pre></body></html>
-
+<script>
 		var name = "kieran";
 
 		document.getElementById("output").innerHTML = name;
+</script>
