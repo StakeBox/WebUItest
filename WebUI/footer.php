@@ -3,11 +3,3 @@
 			</footer>
 		</div><!--.container-->
 </pre></body></html>
-<script>
-     setInterval(function () {
-        $.get("price.php");
-    }, 3000);
-     setInterval(function () {
-	document.title = <?php print($priceb); ?>;   
-    }, 3000); 
-</script>

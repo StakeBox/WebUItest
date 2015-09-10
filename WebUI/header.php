@@ -66,6 +66,29 @@
 				return false;
 			});
 		});
+var obj = null;                             
+function createObj(){
+    if(window.XMLHttpRequest){
+        obj = new XMLHttpRequest();
+    } else {
+        obj = new ActiveXObject("Microsoft.XMLHTTP");
+     }                                  
+}
+
+function currentPrice(){
+     obj.open("GET", "price.php", true);
+     obj.send(null);                                    
+     obj.onreadystatechange = function(){
+
+        if(obj.readyState == 4 && obj.status == 200){
+            var element = document.title();
+            element.innerHTML = obj.responseText;
+        }                       
+    };
+}
+
+createObj();
+setInterval("currentPrice();", 1000);
 	</script>
 </head>
 <body>
