@@ -46,7 +46,7 @@ $x = array_reverse($trans);
 		<td><div style='width:110px;overflow:hidden'><font color='{$colorconfirms}'>{$x['confirmations']}</font></div></td>
                 <td>{$date}</td>
                 <td><div style='width:120px;overflow:hidden'>{$x['txid']}</div></td>
-		<td>{$['comment']}</td>
+		<td>{$x['comment']}</td>
                 </tr>";
         }
         echo "</table>";
