@@ -55,7 +55,7 @@
 <html><head><title><?php echo $price; echo " BTC/"; echo $ticker;?></title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="/icons/netcoin.ico" type="image/x-icon" />
-<link rel="icon" type="image/png" sizes="16x16" href="/icons/netcoin.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="icons/netcoin.png" />
 <link href='css/slate.css' rel='stylesheet' >
 <link href="css/main.css" rel="stylesheet" >
 <script src='libs/jquery.js'></script>
