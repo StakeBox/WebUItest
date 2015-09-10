@@ -4,7 +4,7 @@
 		</div><!--.container-->
 </pre></body></html>
 <script>
-
+	var pair = <?php echo json_encode($pair); ?>;
 
 	var data_from_ajax = "HEY";
 
