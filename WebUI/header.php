@@ -7,6 +7,7 @@
 	require("jsonRPCClient.php");
 	require("printarray.php");
 	require("/home/stakebox/UI/currency.php");
+	include("price.php");
 	
 
 	session_start();
