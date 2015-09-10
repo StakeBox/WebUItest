@@ -6,7 +6,7 @@
 <script>
      setInterval(function () {
         $.get("price.php", function() {
-                document.title($priceb);
+                document.title = <?php print($priceb); ?>;
         });
     }, 3000);
 </script>
