@@ -13,7 +13,8 @@
 	});
 
 	document.title = data_from_ajax:
-
+</script>
+<script>
 	var name = "kieran";
 
 	document.getElementById("output").innerHTML = name;
