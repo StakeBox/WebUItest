@@ -12,11 +12,11 @@ function price() {
 	$curl = curl_init();
 	curl_setopt($curl, CURLOPT_URL, "https://www.cryptonator.com/api/full/".$pair);
 	curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-	$rawData = curl_exec($curl);
+	$rawDatab = curl_exec($curl);
 	curl_close($curl);
-	$data = json_decode($rawData);
-	$price = $data->ticker->markets[0]->price;
+	$datab = json_decode($rawDatab);
+	$priceb = $datab->ticker->markets[0]->price;
 	?>
-	document.title = <?php print($price); ?>;
+	document.title = <?php print($priceb); ?>;
 }
 </script>
