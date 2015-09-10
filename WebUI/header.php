@@ -6,8 +6,8 @@
 	require("/home/stakebox/UI/config.php");
 	require("jsonRPCClient.php");
 	require("printarray.php");
-	require("/home/stakebox/UI/currency.php");	
-
+	require("/home/stakebox/UI/currency.php");
+	
 
 	session_start();
 	if (isset($_GET['currentWallet']) && !empty($_GET['currentWallet']))
@@ -49,10 +49,10 @@
 	
 	$lockState = "Not Encrypted";
 	include("/home/stakebox/UI/primary".$currentWallet."address.php");
-	include("home/stakebox/UI/".$currentWallet."lockstate.php");
+	include("/home/stakebox/UI/".$currentWallet."lockstate.php");
 ?>
 
-<html><head><title></title>
+<html><head><title>StakeBox</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href='css/slate.css' rel='stylesheet' >
 <link href="css/main.css" rel="stylesheet" >
@@ -65,8 +65,6 @@
 				return false;
 			});
 		});
-
-
 	</script>
 </head>
 <body>
