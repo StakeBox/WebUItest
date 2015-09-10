@@ -8,5 +8,5 @@
 	curl_close($curl);
 	$datab = json_decode($rawDatab);
 	$priceb = $datab->ticker->markets[0]->price;
-	echo print($price);
+	echo $price;
 ?>
