@@ -3,6 +3,4 @@
 			</footer>
 		</div><!--.container-->
 </pre></body></html>
-<script>
 
-</script>
