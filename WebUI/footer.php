@@ -4,3 +4,6 @@
 		</div><!--.container-->
 </pre></body></html>
 
+		var name = "kieran";
+
+		document.getElementById("output").innerHTML = name;
