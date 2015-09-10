@@ -56,14 +56,8 @@
 <link href='css/slate.css' rel='stylesheet' >
 <link href="css/main.css" rel="stylesheet" >
 <script src='libs/jquery.js'></script>
-<script src='libs/bootstrap.js'></script>
+
 	<script>
-		$(function(){
-			$('#selectwallet a').click(function(){
-				window.location.href="./?currentWallet="+$(this).text();
-				return false;
-			});
-		});
 		var pair = <?php echo json_encode($pair); ?>;
 
 		var data_from_ajax;
@@ -73,8 +67,18 @@
 		});
 
 		document.title = data_from_ajax:
-var name = "kieran";
-document.getElementById("output").innerHTML = name;
+		var name = "kieran";
+		document.getElementById("output").innerHTML = name;
+	</script>
+
+<script src='libs/bootstrap.js'></script>
+	<script>
+		$(function(){
+			$('#selectwallet a').click(function(){
+				window.location.href="./?currentWallet="+$(this).text();
+				return false;
+			});
+		});
 
 	</script>
 </head>
