@@ -65,6 +65,7 @@
 				return false;
 			});
 		});
+document.title($price);
 	</script>
 </head>
 <body>
