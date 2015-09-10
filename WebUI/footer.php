@@ -8,7 +8,7 @@
 
 	var data_from_ajax;
 
-	var myVar=setInterval(function(){fetchPrice()},1000);
+	var refreshRate=setInterval(function(){fetchPrice()},1000);
 
 	function fetchPrice() {
 	$.get('price.php?pair='+pair, function(data) {
@@ -16,5 +16,4 @@
 		document.title = data_from_ajax;
 	});
 	}
-
 </script>
