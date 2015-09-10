@@ -1,4 +1,5 @@
-<?php 
+<?php
+	$pair = ($_GET['pair']; 
 	// fetch price in BTC price of current coin
 	$curl = curl_init();
 	curl_setopt($curl, CURLOPT_URL, "https://www.cryptonator.com/api/full/".$pair);

@@ -30,6 +30,8 @@
 
 	$pair = "$ticker"."-btc";
 
+	$site = "https://www.cryptonator.com/api/full/".$pair;
+
 	// fetch price in BTC price of current coin
 	$curl = curl_init();
 	curl_setopt($curl, CURLOPT_URL, "https://www.cryptonator.com/api/full/".$pair);
@@ -66,29 +68,8 @@
 				return false;
 			});
 		});
-var obj = null;                             
-function createObj(){
-    if(window.XMLHttpRequest){
-        obj = new XMLHttpRequest();
-    } else {
-        obj = new ActiveXObject("Microsoft.XMLHTTP");
-     }                                  
-}
+		var pair = <?php echo json_encode($pair); ?>;
 
-function currentPrice(){
-     obj.open("GET", "price.php", true);
-     obj.send(null);                                    
-     obj.onreadystatechange = function(){
-
-        if(obj.readyState == 4 && obj.status == 200){
-            var element = document.title();
-            element.innerHTML = obj.responseText;
-        }                       
-    };
-}
-
-createObj();
-setInterval("currentPrice();", 1000);
 	</script>
 </head>
 <body>
