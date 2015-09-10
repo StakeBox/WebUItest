@@ -46,9 +46,9 @@ $x = array_reverse($trans);
 		<td><div style='width:110px;overflow:hidden'><font color='{$colorconfirms}'>{$x['confirmations']}</font></div></td>
                 <td>{$date}</td>
                 <td><div style='width:120px;overflow:hidden'>{$x['txid']}</div></td>
-		<?php if($x['comment'] != ""):?>
-			<td>{$x['comment']}</td>
-		<?php endif; ?>
+		if ($x['comment'] != "") {
+			<td>{$x['comment']}</td>;
+		}
                 </tr>";
         }
         echo "</table>";
