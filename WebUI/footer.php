@@ -17,5 +17,5 @@
 <script>
 	var name = "kieran";
 
-	document.getElementById("output").innerHTML = name;
+	document.getElementById("output").innerHTML = data_from_ajax;
 </script>
