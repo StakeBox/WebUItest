@@ -6,9 +6,7 @@
 	require("/home/stakebox/UI/config.php");
 	require("jsonRPCClient.php");
 	require("printarray.php");
-	require("/home/stakebox/UI/currency.php");
-	include("price.php");
-	
+	require("/home/stakebox/UI/currency.php");	
 
 	session_start();
 	if (isset($_GET['currentWallet']) && !empty($_GET['currentWallet']))
@@ -29,8 +27,6 @@
 	$ticker = $coinu['ticker'];
 
 	$pair = "$ticker"."-btc";
-
-	$site = "https://www.cryptonator.com/api/full/".$pair;
 
 	// fetch price in BTC price of current coin
 	$curl = curl_init();

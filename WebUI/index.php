@@ -89,7 +89,6 @@ if ($currentWallet == BottleCaps || $currentWallet == HoboNickels || $currentWal
 </div>
 </div>
 <div class="well">
-<?php echo print($priceb);
 
 	<p> Your main wallet address is <?php print_r($address); ?>.    
 	<p>The network is currently on block <?php print_r($coin->getblockcount()); ?>.
