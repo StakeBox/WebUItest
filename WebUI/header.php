@@ -65,7 +65,7 @@
 				return false;
 			});
 		});
-document.title($price);
+document.title(<?php print($price); ?>);
 	</script>
 </head>
 <body>
