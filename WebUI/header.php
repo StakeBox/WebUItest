@@ -52,7 +52,7 @@
 	include("home/stakebox/UI/".$currentWallet."lockstate.php");
 ?>
 
-<html><head><title>'<p id="demo"></p>'</title>
+<html><head><title></title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href='css/slate.css' rel='stylesheet' >
 <link href="css/main.css" rel="stylesheet" >
