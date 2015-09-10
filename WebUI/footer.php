@@ -9,7 +9,7 @@
 	var data_from_ajax;
 
 	$.get('price.php?pair=net-btc', function(data) {
-		data_from_ajax = hey;
+		data_from_ajax = "hey";
 	});
 
 	document.title = data_from_ajax:
