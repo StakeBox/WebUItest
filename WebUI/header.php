@@ -8,6 +8,7 @@
 	require("printarray.php");
 	require("/home/stakebox/UI/currency.php");	
 
+
 	session_start();
 	if (isset($_GET['currentWallet']) && !empty($_GET['currentWallet']))
 		$_SESSION['currentWallet'] = $_GET['currentWallet'];
@@ -65,15 +66,6 @@
 			});
 		});
 
-		var pair = <?php echo json_encode($pair); ?>;
-
-		var data_from_ajax;
-
-		$.get('price.php?pair=net-btc', function(data) {
-			data_from_ajax = data;
-		});
-
-		document.title = data_from_ajax:
 		var name = "kieran";
 		setInterval function() {
 			document.getElementById("output").innerHTML = name;
