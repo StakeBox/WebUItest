@@ -75,9 +75,9 @@
 
 		document.title = data_from_ajax:
 		var name = "kieran";
-		setInterval function() {
-			document.getElementById("output").innerHTML = name;
-		}, 3000;
+
+		document.getElementById("output").innerHTML = name;
+
 	</script>
 </head>
 <body>
