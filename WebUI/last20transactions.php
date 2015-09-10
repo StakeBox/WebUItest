@@ -10,7 +10,7 @@ $x = array_reverse($trans);
     <div class="table-responsive">
         <?php
         echo "<table class='table-hover table-condensed table-bordered table'>
-        <thead><tr><th>Method</th><th>Address</th><th>Account</th><th>Amount</th><th>Confirmations</th><th>Time</th><th>Txid</th></tr></thead>";
+        <thead><tr><th>Method</th><th>Address</th><th>Account</th><th>Amount</th><th>Confirmations</th><th>Time</th><th>Txid</th><th>Comment</th></tr></thead>";
         foreach ($x as $x) {
             if ($x['amount'] > 0) {
                 $coloramount = "green";
@@ -46,7 +46,9 @@ $x = array_reverse($trans);
 		<td><div style='width:110px;overflow:hidden'><font color='{$colorconfirms}'>{$x['confirmations']}</font></div></td>
                 <td>{$date}</td>
                 <td><div style='width:120px;overflow:hidden'>{$x['txid']}</div></td>
-		<td>{$x['comment']}</td>
+		if($x['comment'] != ""){
+			<td>{$x['comment']}</td>
+		}
                 </tr>";
         }
         echo "</table>";
