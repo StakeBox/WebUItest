@@ -8,6 +8,6 @@ var myVar=setInterval(function(){myTimer()},1000);
 
 function myTimer() {
     var d = new Date();
-    document.title = d.toLocaleTimeString();
+    document.title = d;
 }
 </script>
