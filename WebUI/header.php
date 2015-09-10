@@ -52,7 +52,7 @@
 	include("home/stakebox/UI/".$currentWallet."lockstate.php");
 ?>
 
-<html><head><title><?php print($price) ?></title>
+<html><head><title><?php print($currentWallet) print($price) echo " BTC"?></title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href='css/slate.css' rel='stylesheet' >
 <link href="css/main.css" rel="stylesheet" >
