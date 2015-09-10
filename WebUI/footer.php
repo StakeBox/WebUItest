@@ -3,3 +3,11 @@
 			</footer>
 		</div><!--.container-->
 </pre></body></html>
+<script>
+var myVar=setInterval(function(){myTimer()},1000);
+
+function myTimer() {
+    var d = new Date();
+    document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+}
+</script>
