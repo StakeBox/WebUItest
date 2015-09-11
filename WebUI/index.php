@@ -90,10 +90,6 @@ if ($currentWallet == BottleCaps || $currentWallet == HoboNickels || $currentWal
 </div>
 <div class="well">
 <div class="row">
-   <?php
-	echo $uptodate;
-        print_r($current_tag);
-   ?>
 	<div class="col-lg-7">
 	<p> Your main wallet address is <?php print_r($address); ?>.    
 	<p>The network is currently on block <?php print_r($coin->getblockcount()); ?>.
@@ -117,6 +113,9 @@ if ($currentWallet == BottleCaps || $currentWallet == HoboNickels || $currentWal
 		<?php if ($hours > 1 && $days > 1)echo "$days days $hours hours $minutes minutes"?>
 	<?php endif; ?>
 		</p></p>
+	<?php if($uptodate = "update avaiable"{
+		echo "a href='update' class='btn btn-default' role='button'>Update</a>"
+	}?>
 	</div>
      <?php if(file_exists("/home/stakebox/UI/".$currentWallet."notes.php")){ 
        include('/home/stakebox/UI/'.$currentWallet.'notes.php'); 
