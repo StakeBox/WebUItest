@@ -3,7 +3,7 @@ include("header.php");
 include("pass.php");
 $trans = $coin->listtransactions('*', 20);
 $x = array_reverse($trans);
-$commentFile = "/home/stakebox/UI/"$currentWallet.$txid.".php";
+
 ?>
 
 <p><b>Last 20 Transactions:</b></p>
