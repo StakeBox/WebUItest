@@ -27,12 +27,12 @@ function changenotes(){
   	echo '<h4><a><p><b>Your notes have been changed.</p></b></a></h4>' ;
 }
 
-if($_POST['notes'] != ""){
+
    $newnotes = $_POST['notes'];
    changenotes();
    print_r('The following has been written to the notes file: ');
    print_r($_POST['notes']);
-}
+
 ?>
 
 
