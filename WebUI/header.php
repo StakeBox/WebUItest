@@ -99,7 +99,7 @@
 					<li><a href="control">Control</a></li>
 				</ul>
 				<div class="navbar-right">
-					<p class="navbar-text"><?php 	echo "Current price is <p id='price'>{$price}</p> BTC on {$data->ticker->markets[0]->market}"; ?></p>
+					<p class="navbar-text"><?php 	echo "Current price is <b id='price'>{$price}</b> BTC on {$data->ticker->markets[0]->market}"; ?></p>
 					<p class="navbar-text">Select Wallet:</p>
 					<ul class="nav navbar-nav">
 						<li class="dropdown">
