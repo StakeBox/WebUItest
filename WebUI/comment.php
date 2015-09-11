@@ -31,9 +31,10 @@ function addComment(){
 if($_POST['comment'] != ""){
    $newComment = $_POST['comment'];
    addComment();
-   print_r('You have added the comment to ');
-   echo $_POST['txid']; 
+   print_r('You have added the comment ');
    print_r($_POST['comment']);
+   echo " to ";
+   echo $_POST['txid']; 
 }
 	
 ?>
