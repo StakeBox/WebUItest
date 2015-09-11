@@ -34,24 +34,23 @@ if($_POST['comment'] != ""){
    print_r('You have added the comment ');
    print_r($_POST['comment']);
 }
-else:	
+	
 ?>
 <div class="panel panel-default">
   <center><p>Add comment to transaction <?php echo $_POST['txid']; ?>
     <table class="table-hover table-condensed table-bordered table">
         <form action="comment" method="POST"><input type="hidden">
-            <input type="hidden" name="a">
                 <tr>
                     <td><center><b>Comment to add:</b></center></td>
-                    <td><input class="form-control" type="text" name="address" value="comment"></td>
+                    <td><input class="form-control" type="text" name="comment"></td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td><button class='btn btn-default' type="submit" value="addComment"><b>Add Comment</b></button></td>
+                    <td><button class='btn btn-default' type="submit"><b>Add Comment</b></button></td>
 		</tr>
         </form>
     </table>
 </div>
-<?php endif; ?>
+
 </div>
 <?php include ("footer.php"); ?>
