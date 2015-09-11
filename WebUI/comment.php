@@ -34,7 +34,7 @@ if($_POST['comment'] != ""){
    print_r('You have added the comment ');
    print_r($_POST['comment']);
 }
-	
+else:	
 ?>
 <div class="panel panel-default">
   <center><p>Add comment to transaction <?php echo $_POST['txid']; ?>
@@ -52,5 +52,6 @@ if($_POST['comment'] != ""){
         </form>
     </table>
 </div>
+<?php endif; ?>
 </div>
 <?php include ("footer.php"); ?>
