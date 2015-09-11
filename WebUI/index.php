@@ -114,7 +114,7 @@ if ($currentWallet == BottleCaps || $currentWallet == HoboNickels || $currentWal
 	<?php endif; ?>
 		</p></p>
 	</div>
-     <?php if(file_exists("/home/stakebox/UI/"$currentWallet."notes.php")){ 
+     <?php if(file_exists("/home/stakebox/UI/".$currentWallet."notes.php")){ 
        include("/home/stakebox/UI/"$currentWallet."notes.php"); ?>
 	<div class="col-lg-5">
 	  <div class="form-group">
