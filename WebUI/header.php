@@ -68,7 +68,8 @@
 
 	if (!strcmp($current_tag, $ref_tag)){
 	    $uptodate = false;
-	  else
+	}
+	  else{
 	    $uptodate = true;
 	}
 ?>
