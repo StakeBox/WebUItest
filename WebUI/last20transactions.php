@@ -57,8 +57,8 @@ $x = array_reverse($trans);
                 <td>{$date}</td>
                 <td><div style='width:120px;overflow:hidden'>{$x['txid']}</div></td>
 		<td>
-			<form action="walletlock" method="POST"><input type="hidden">
-				<button class='btn btn-default btn-block ' type="submit" value="walletlock">Lock Your Wallet</button>
+			<form action='walletlock' method='POST'><input type='hidden'>
+				<button class='btn btn-default btn-block ' type='submit' value='walletlock'>Lock Your Wallet</button>
 			</form>
 		</td>
                 </tr>";
