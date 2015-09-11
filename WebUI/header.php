@@ -73,6 +73,7 @@
 			$.get('price.php?pair='+pair, function(data) {
 				data_from_ajax = data;
 				document.title = data_from_ajax+" BTC/"+ticker;
+				document.getElementById("price").innerHTML = data_from_ajax;
 			});
 		}
 	</script>
