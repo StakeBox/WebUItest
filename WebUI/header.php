@@ -63,7 +63,7 @@
 
 
 
-	$current_tag = $commits->name;
+	$current_tag = $commits;
 	$ref_tag = "1.1.0";
 
 	if (!strcmp($current_tag, $ref_tag))
