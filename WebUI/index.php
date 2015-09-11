@@ -115,8 +115,18 @@ if ($currentWallet == BottleCaps || $currentWallet == HoboNickels || $currentWal
 		</p></p>
 	</div>
 	<div class="col-lg-5">
-	<textarea class="FormElement" name="term" id="term" cols="40" rows="10"></textarea>
-	</div>
+	  <div class="form-group">
+	  <form action="notes" method="POST"><input type="hidden">
+	    <div class="input-group">
+	      <span class="input-group-btn">
+		<button class='btn btn-default' type="submit" value="setprimary">Set Main Address</button>
+	      </span>
+	        <label for="comment">Comment:</label>
+	      <textarea class="form-control" name="term" id="term" cols="60" rows="10"></textarea>
+	    </div><!-- /input-group -->
+	  </div>
+	  </form>
+	 </div>
 </div>
 </div>
 <?php include ("footer.php"); ?>
