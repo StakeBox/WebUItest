@@ -96,7 +96,8 @@ if ($currentWallet == BottleCaps || $currentWallet == HoboNickels || $currentWal
    else{
 	echo "<p>nope</p>";
    }
-   print_r($rawData2); 
+   print_r($data2); 
+   print_r($commits);
    ?>
 	<div class="col-lg-7">
 	<p> Your main wallet address is <?php print_r($address); ?>.    
