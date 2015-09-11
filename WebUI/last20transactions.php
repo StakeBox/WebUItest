@@ -12,9 +12,9 @@ $x = array_reverse($trans);
         echo "<table class='table-hover table-condensed table-bordered table'>
         <thead><tr><th>Method</th><th>Address</th><th>Account</th><th>Amount</th><th>Confirmations</th><th>Time</th><th>Txid</th><th>Comment</th></tr></thead>";
         foreach ($x as $x) {
-	  echo $x['$txid'];
+	  echo "$x['$txid']";
 	  $commentFile = "/home/stakebox/UI/".$currentWallet.$txid."comment.php";
-	  echo $commentFile;
+
             if ($x['amount'] > 0) {
                 $coloramount = "green";
             } 
