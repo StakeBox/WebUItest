@@ -46,12 +46,21 @@
 	curl_close($curl);
 	$data1 = json_decode($rawData1);
 	$fiatBTC = $data1->price;
+
+	// fetch fiat value of BTC
+	$curl = curl_init();
+	curl_setopt($curl, CURLOPT_URL, "https://api.github.com/repos/stakebox/webui/tags");
+	curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+	$rawData2 = curl_exec($curl);
+	curl_close($curl);
+	$data2 = json_decode($rawData2);
+	$commits = $data2->commits;
 	
 	$lockState = "Not Encrypted";
 	include("/home/stakebox/UI/primary".$currentWallet."address.php");
 	include("/home/stakebox/UI/".$currentWallet."lockstate.php");
 
-	$commits = json_decode("https://api.github.com/repos/stakebox/webui/tags");
+
 
 	$current_tag = $commits->name;
 	$ref_tag = "1.1.0";
