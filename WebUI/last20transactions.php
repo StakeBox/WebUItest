@@ -49,7 +49,7 @@ $x = array_reverse($trans);
 		<td>{$x['comment']}</td>
                 </tr>";
 	  }
-	  else if(file_exists("$currentWallet.{$x['txid']}.".php"")){
+	  else if(file_exists($currentWallet.{$x['txid']}.".php")){
             echo "<td>{$x['address']}</td>
                 <td><div style='width:60px;overflow:hidden'>{$x['account']}</div></td>
                 <td><div style='width:70px;overflow:hidden'><font color='{$coloramount}'>{$x['amount']}</font></div></td>
