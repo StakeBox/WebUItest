@@ -50,7 +50,7 @@ $commentFile = "/home/stakebox/UI/"$currentWallet.$txid.".php"
 		<td>{$x['comment']}</td>
                 </tr>";
 	  }
-	  else if(file_exists("$commentFile")){
+	  elseif(file_exists($commentFile)){
             echo "<td>{$x['address']}</td>
                 <td><div style='width:60px;overflow:hidden'>{$x['account']}</div></td>
                 <td><div style='width:70px;overflow:hidden'><font color='{$coloramount}'>{$x['amount']}</font></div></td>
