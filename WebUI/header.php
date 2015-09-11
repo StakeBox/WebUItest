@@ -64,7 +64,7 @@
 
 
 	
-	$ref_tag = "1.1.0";
+	$ref_tag = "1.1.1";
 
 	if ($ref_tag != $current_tag){
 	    $uptodate = "update available";
