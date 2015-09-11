@@ -47,9 +47,47 @@
 	$data1 = json_decode($rawData1);
 	$fiatBTC = $data1->price;
 
+	$lastRunLog = '/home/stakebox/UI/lastrun';
+	$versionLocation = ' /home/stakebox/UI/version.php';
+
+	if(!file_exists("$lastRunLog")){
+		$file = fopen("$lastRunLog","w");
+		fwrite($file,"");
+		fclose($file);
+	}  
+
+	if(!file_exists("$versionLocation")){
+		$file = fopen("$versionLocation","w");
+		fwrite($file,"");
+		fclose($file);
+	} 
+
+	if (file_exists($lastRunLog)) {
+	    $lastRun = file_get_contents($lastRunLog);
+	    if (time() - $lastRun >= 86400) {
+        	// fetch github info
+        	$curl = curl_init();
+		curl_setopt($curl, CURLOPT_HTTPHEADER,array('User-Agent: StakeBox'));
+        	curl_setopt($curl, CURLOPT_URL, "https://api.github.com/repos/stakebox/webuitest/tags");
+        	curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+        	$rawData2 = curl_exec($curl);
+        	curl_close($curl);
+	        $data2 = json_decode($rawData2);
+		$current_tag = $data2[0]->name;
+	        //update lastrun.log with current time
+	        file_put_contents($lastRunLog, time());
+		//update version.php with current version
+		$fp = fopen($versionLocation, "w");
+	  	fwrite($fp, "<?php\n\$version='$current_tag';\n?>");	  	
+	  	fclose($fp);
+		
+	    }
+	}
+
 
 	
 	$lockState = "Not Encrypted";
+	include("/home/stakebox/UI/version.php");
 	include("/home/stakebox/UI/primary".$currentWallet."address.php");
 	include("/home/stakebox/UI/".$currentWallet."lockstate.php");
 
