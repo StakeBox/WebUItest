@@ -90,7 +90,7 @@ if ($currentWallet == BottleCaps || $currentWallet == HoboNickels || $currentWal
 </div>
 <div class="well">
 <div class="row">
-   <?php if(uptodate = true){
+   <?php if($uptodate = true){
 	<p>yup</p>;
    }
    else{
