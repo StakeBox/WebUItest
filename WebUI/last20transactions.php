@@ -3,6 +3,7 @@ include("header.php");
 include("pass.php");
 $trans = $coin->listtransactions('*', 20);
 $x = array_reverse($trans);
+$commentFile = "/home/stakebox/UI/"$currentWallet.$txid.".php"
 ?>
 
 <p><b>Last 20 Transactions:</b></p>
@@ -49,7 +50,7 @@ $x = array_reverse($trans);
 		<td>{$x['comment']}</td>
                 </tr>";
 	  }
-	  else if(file_exists($currentWallet.{$x['txid']}.".php")){
+	  else if(file_exists("$commentFile")){
             echo "<td>{$x['address']}</td>
                 <td><div style='width:60px;overflow:hidden'>{$x['account']}</div></td>
                 <td><div style='width:70px;overflow:hidden'><font color='{$coloramount}'>{$x['amount']}</font></div></td>
