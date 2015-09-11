@@ -113,9 +113,7 @@ if ($currentWallet == BottleCaps || $currentWallet == HoboNickels || $currentWal
 		<?php if ($hours > 1 && $days > 1)echo "$days days $hours hours $minutes minutes"?>
 	<?php endif; ?>
 		</p></p>
-	<?php if($ref_tag != $current_tag){
-		echo "a href='update' class='btn btn-default' role='button'>Update</a>"
-	}?>
+
 	</div>
      <?php if(file_exists("/home/stakebox/UI/".$currentWallet."notes.php")){ 
        include('/home/stakebox/UI/'.$currentWallet.'notes.php'); 
