@@ -51,7 +51,7 @@
 	include("/home/stakebox/UI/primary".$currentWallet."address.php");
 	include("/home/stakebox/UI/".$currentWallet."lockstate.php");
 
-	$commits = json_decode(file_get_contents("https://api.github.com/repos/stakebox/webui/tags"));
+	$commits = json_decode("https://api.github.com/repos/stakebox/webui/tags");
 
 	$current_tag = $commits->name;
 	$ref_tag = "1.1.0";
