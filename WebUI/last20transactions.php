@@ -13,7 +13,7 @@ $x = array_reverse($trans);
         <thead><tr><th>Method</th><th>Address</th><th>Account</th><th>Amount</th><th>Confirmations</th><th>Time</th><th>Txid</th><th>Comment</th></tr></thead>";
         foreach ($x as $x) {
 	  $commentFile = "/home/stakebox/UI/".$currentWallet.{$x['$txid']}."comment.php";
-	  echo $commentFile;
+
             if ($x['amount'] > 0) {
                 $coloramount = "green";
             } 
