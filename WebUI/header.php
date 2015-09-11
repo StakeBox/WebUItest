@@ -47,15 +47,6 @@
 	$data1 = json_decode($rawData1);
 	$fiatBTC = $data1->price;
 
-        // fetch github info
-        $curl = curl_init();
-	curl_setopt($curl, CURLOPT_HTTPHEADER,array('User-Agent: StakeBox'));
-        curl_setopt($curl, CURLOPT_URL, "https://api.github.com/repos/stakebox/webuitest/tags");
-        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-        $rawData2 = curl_exec($curl);
-        curl_close($curl);
-        $data2 = json_decode($rawData2);
-	$current_tag = $data2[0]->name;
 	
 	$lockState = "Not Encrypted";
 	include("/home/stakebox/UI/primary".$currentWallet."address.php");
@@ -63,15 +54,6 @@
 
 
 
-	
-	$ref_tag = "1.1.2";
-
-	if ($ref_tag != $current_tag){
-	    $uptodate = "update available";
-	}
-	  else{
-	    $uptodate = "up to date";
-	}
 ?>
 
 <html><head><title><?php echo $price; echo " BTC/"; echo $ticker;?></title>
