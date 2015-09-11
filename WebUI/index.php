@@ -90,7 +90,7 @@ if ($currentWallet == BottleCaps || $currentWallet == HoboNickels || $currentWal
 </div>
 <div class="well">
 <div class="row">
-	<div class="col-lg-6">
+	<div class="col-lg-7">
 	<p> Your main wallet address is <?php print_r($address); ?>.    
 	<p>The network is currently on block <?php print_r($coin->getblockcount()); ?>.
 	<?php if ($currentWallet == ArchCoin || $currentWallet == BitBean || $currentWallet == BlackCoin || $currentWallet == BottleCaps || $currentWallet == Clams || $currentWallet == DarkTron || $currentWallet == Equilibrium || $currentWallet == FlutterCoin || $currentWallet == GoldPieces || $currentWallet == HoboNickels || $currentWallet == Navajo || $currentWallet == NetCoin || $currentWallet == PayCon || $currentWallet == PayCoin || $currentWallet == RATECoin || $currentWallet == ShadowCash || $currentWallet == VeriCoin): ?>
@@ -114,8 +114,8 @@ if ($currentWallet == BottleCaps || $currentWallet == HoboNickels || $currentWal
 	<?php endif; ?>
 		</p></p>
 	</div>
-	<div class="col-lg-3">
-	<textarea class="FormElement" name="term" id="term" cols="40" rows="4"></textarea>
+	<div class="col-lg-5">
+	<textarea class="FormElement" name="term" id="term" cols="40" rows="10"></textarea>
 	</div>
 </div>
 </div>
