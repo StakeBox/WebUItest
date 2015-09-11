@@ -6,7 +6,7 @@ $commentLocation = "/home/stakebox/UI/".$currentWallet.$txid."comment.php";
 
 function addComment(){
 
-	global $commantLocation;
+	global $commentLocation;
 	global $newComment;
 	if(!file_exists("$commentLocation")){
 		$file = fopen("$commentLocation","w");
