@@ -50,7 +50,7 @@
 	$lockState = "Not Encrypted";
 	include("/home/stakebox/UI/primary".$currentWallet."address.php");
 	include("/home/stakebox/UI/".$currentWallet."lockstate.php");
-	$uptodate = "yup";
+	var $uptodate;
 ?>
 
 <html><head><title><?php echo $price; echo " BTC/"; echo $ticker;?></title>
