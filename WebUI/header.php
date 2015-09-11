@@ -66,7 +66,7 @@
 	
 	$ref_tag = "1.1.0";
 
-	if (!strcmp($current_tag, $ref_tag)){
+	if ($ref_tag != $current_tag){
 	    $uptodate = "update available";
 	}
 	  else{
