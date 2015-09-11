@@ -90,13 +90,9 @@ if ($currentWallet == BottleCaps || $currentWallet == HoboNickels || $currentWal
 </div>
 <div class="well">
 <div class="row">
-   <?php if($uptodate = true){
-	echo "<p>yup</p>";
-   }
-   else{
-	echo "<p>nope</p>";
-   } 
-   print_r($commits);
+   <?php
+	echo $uptodate;
+        print_r($current_tag);
    ?>
 	<div class="col-lg-7">
 	<p> Your main wallet address is <?php print_r($address); ?>.    

@@ -55,7 +55,7 @@
         $rawData2 = curl_exec($curl);
         curl_close($curl);
         $data2 = json_decode($rawData2);
-	$commits = $data2[0]->name;
+	$current_tag = $data2[0]->name;
 	
 	$lockState = "Not Encrypted";
 	include("/home/stakebox/UI/primary".$currentWallet."address.php");
@@ -63,7 +63,7 @@
 
 
 
-	$current_tag = $commits;
+	
 	$ref_tag = "1.1.0";
 
 	if (!strcmp($current_tag, $ref_tag)){
