@@ -39,6 +39,4 @@ if($_POST['comment'] != ""){
 	
 ?>
 </div>
-
-</div>
 <?php include ("footer.php"); ?>
