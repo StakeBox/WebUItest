@@ -48,7 +48,7 @@
 	$fiatBTC = $data1->price;
 
 	$lastRunLog = '/home/stakebox/UI/lastrun';
-	$versionLocation = ' /home/stakebox/UI/version.php';
+	$versionLocation = '/home/stakebox/UI/version.php';
 
 	if(!file_exists("$lastRunLog")){
 		$file = fopen("$lastRunLog","w");
@@ -94,7 +94,7 @@
 
 
 	
-	$ref_tag = "1.1.0";
+	$ref_tag = "1.1.1";
 
 	if ($ref_tag != $current_tag){
 	    $uptodate = "update available";
