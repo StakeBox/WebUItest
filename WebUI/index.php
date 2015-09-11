@@ -116,12 +116,12 @@ if ($currentWallet == BottleCaps || $currentWallet == HoboNickels || $currentWal
 	</div>
      <?php if(file_exists("/home/stakebox/UI/".$currentWallet."notes.php")){ 
        include('/home/stakebox/UI/'.$currentWallet.'notes.php'); 
-	echo "<div class="col-lg-5">
-	  <div class="form-group">
-	  <form action="notes" method="POST"><input type="hidden">
-	    <label for="notes">Notes:</label>
-	      <textarea class="form-control" name="notes" id="notes" cols="60" rows="10" ></textarea>
-		<button class='btn btn-default' type="submit" value="setprimary">Save Notes</button>
+	echo "<div class='col-lg-5'>
+	  <div class='form-group'>
+	  <form action='notes' method='POST'><input type='hidden'>
+	    <label for='notes'>Notes:</label>
+	      <textarea class='form-control' name='notes' id='notes' cols='60' rows='10' ></textarea>
+		<button class='btn btn-default' type='submit' value='setprimary'>Save Notes</button>
 	  </form>
 	  </div>
 	</div>";}?>
