@@ -95,7 +95,9 @@ if ($currentWallet == BottleCaps || $currentWallet == HoboNickels || $currentWal
    }
    else{
 	echo "<p>nope</p>";
-   }?>
+   }
+   echo $uptodate; 
+   ?>
 	<div class="col-lg-7">
 	<p> Your main wallet address is <?php print_r($address); ?>.    
 	<p>The network is currently on block <?php print_r($coin->getblockcount()); ?>.
