@@ -31,7 +31,8 @@ function addComment(){
 if($_POST['comment'] != ""){
    $newComment = $_POST['comment'];
    addComment();
-   print_r('You have added the comment ');
+   print_r('You have added the comment to ');
+   echo $_POST['txid']; 
    print_r($_POST['comment']);
 }
 	
@@ -46,7 +47,7 @@ if($_POST['comment'] != ""){
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td><button class='btn btn-default' type="submit"><b>Add Comment</b></button></td>
+                    <td><button class='btn btn-default' type="submit" name='txid' value=<?php echo $txid; ?>><b>Add Comment</b></button></td>
 		</tr>
         </form>
     </table>
