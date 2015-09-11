@@ -42,7 +42,7 @@ if($_POST['comment'] != ""){
         <form action="comment" method="POST"><input type="hidden">
             <input type="hidden" name="a">
                 <tr>
-                    <td><b>Comment:</b></td>
+                    <td><center<b>Comment to add:</b></center></td>
                     <td><input class="form-control" type="text" name="address" value="<?php print($address); ?>"></td>
                 </tr>
                 <tr>
