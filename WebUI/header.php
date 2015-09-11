@@ -47,13 +47,13 @@
 	$data1 = json_decode($rawData1);
 	$fiatBTC = $data1->price;
 
-	// fetch fiat value of BTC
-	$curl = curl_init();
-	curl_setopt($curl, CURLOPT_URL, -iH 'User-Agent:StakeBox' "https://api.github.com/repos/stakebox/webui/tags");
-	curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-	$rawData2 = curl_exec($curl);
-	curl_close($curl);
-	$data2 = json_decode($rawData2);
+        // fetch github info
+        $curl = curl_init();
+        curl_setopt($curl, CURLOPT_URL, "-iH 'User-Agent:StakeBox ' https://api.github.com/repos/stakebox/webuitest/tags");
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+        $rawData2 = curl_exec($curl);
+        curl_close($curl);
+        $data2 = json_decode($rawData2);
 	$commits = $data2->name;
 	
 	$lockState = "Not Encrypted";
