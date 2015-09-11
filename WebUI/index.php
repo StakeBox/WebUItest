@@ -114,7 +114,7 @@ if ($currentWallet == BottleCaps || $currentWallet == HoboNickels || $currentWal
 	<?php endif; ?>
 		</p></p>
 	<?php if($ref_tag != $current_tag):?>
-		<a href='update' class='btn btn-default' role='button'>Update</a>
+		<a href='update' class='btn btn-default' role='button'>A new update is available, click to get it.</a>
 	<?php endif; ?>
 	</div>
      <?php if(file_exists("/home/stakebox/UI/".$currentWallet."notes.php")){ 
