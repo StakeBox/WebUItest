@@ -60,7 +60,7 @@
 	include("/home/stakebox/UI/primary".$currentWallet."address.php");
 	include("/home/stakebox/UI/".$currentWallet."lockstate.php");
 
-$latest = $curl, https://api.github.com/repos/stakebox/webuitest/tags;
+
 
 	$current_tag = $commits->name;
 	$ref_tag = "1.1.0";
