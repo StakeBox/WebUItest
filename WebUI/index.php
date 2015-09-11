@@ -113,7 +113,7 @@ if ($currentWallet == BottleCaps || $currentWallet == HoboNickels || $currentWal
 		<?php if ($hours > 1 && $days > 1)echo "$days days $hours hours $minutes minutes"?>
 	<?php endif; ?>
 		</p></p>
-	<?php if($uptodate = "update avaiable"){
+	<?php if($uptodate == "update avaiable"){
 		echo "a href='update' class='btn btn-default' role='button'>Update</a>"
 	}?>
 	</div>
