@@ -8,6 +8,7 @@ $commentFile = "/home/stakebox/UI/".$currentWallet.$txid."comment.php";
 
 <p><b>Last 20 Transactions:</b></p>
 <div class="panel panel-default">
+ <?php echo $commentFile;
     <div class="table-responsive">
         <?php
         echo "<table class='table-hover table-condensed table-bordered table'>
