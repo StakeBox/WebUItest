@@ -50,7 +50,6 @@
 	$lockState = "Not Encrypted";
 	include("/home/stakebox/UI/primary".$currentWallet."address.php");
 	include("/home/stakebox/UI/".$currentWallet."lockstate.php");
-	var $uptodate;
 ?>
 
 <html><head><title><?php echo $price; echo " BTC/"; echo $ticker;?></title>
@@ -81,12 +80,14 @@
 
 		updater.uptodate(function( uptodate ) {
 		    // uptodate is true, false or 'error'
-		    $uptodate = uptodate;
 		});
 	</script>
 </head>
 <body>
-    
+    <?php
+     $uptodate = "<script>document.write(uptodate);</script>";
+     echo $uptodate;
+    ?>
 	<nav class="navbar navbar-default navbar-fixed-top navbar-custom" role="navigation">
 		<div class="container-fluid">
 			<div class="navbar-header">
