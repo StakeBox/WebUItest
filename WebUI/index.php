@@ -89,7 +89,8 @@ if ($currentWallet == BottleCaps || $currentWallet == HoboNickels || $currentWal
 </div>
 </div>
 <div class="well">
-<p id="output"></p>
+<div class="row">
+	<div class="col-lg-6">
 	<p> Your main wallet address is <?php print_r($address); ?>.    
 	<p>The network is currently on block <?php print_r($coin->getblockcount()); ?>.
 	<?php if ($currentWallet == ArchCoin || $currentWallet == BitBean || $currentWallet == BlackCoin || $currentWallet == BottleCaps || $currentWallet == Clams || $currentWallet == DarkTron || $currentWallet == Equilibrium || $currentWallet == FlutterCoin || $currentWallet == GoldPieces || $currentWallet == HoboNickels || $currentWallet == Navajo || $currentWallet == NetCoin || $currentWallet == PayCon || $currentWallet == PayCoin || $currentWallet == RATECoin || $currentWallet == ShadowCash || $currentWallet == VeriCoin): ?>
@@ -111,5 +112,11 @@ if ($currentWallet == BottleCaps || $currentWallet == HoboNickels || $currentWal
 		<?php if ($hours == 1 && $days > 1)echo "$days days $hours hour $minutes minutes"?>
 		<?php if ($hours > 1 && $days > 1)echo "$days days $hours hours $minutes minutes"?>
 	<?php endif; ?>
-		</p></p></div>
+		</p></p>
+	</div>
+	<div class="col-lg-3">
+	<textarea class="FormElement" name="term" id="term" cols="40" rows="4"></textarea>
+	</div>
+</div>
+</div>
 <?php include ("footer.php"); ?>
