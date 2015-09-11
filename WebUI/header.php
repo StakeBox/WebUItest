@@ -80,11 +80,12 @@
 
 		updater.uptodate(function( uptodate ) {
 		    // uptodate is true, false or 'error'
+		    <?php $uptodate = "document.write(uptodate);"; ?>
 		});
 	</script>
 </head>
 <body>
-    <?php $uptodate = "<script>document.write(uptodate);</script>"; ?>
+    
 	<nav class="navbar navbar-default navbar-fixed-top navbar-custom" role="navigation">
 		<div class="container-fluid">
 			<div class="navbar-header">
