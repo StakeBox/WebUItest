@@ -49,6 +49,20 @@ $x = array_reverse($trans);
 		<td>{$x['comment']}</td>
                 </tr>";
 	  }
+	  else if(file_exists("$currentWallet.{$x['txid']}.".php"")){
+            echo "<td>{$x['address']}</td>
+                <td><div style='width:60px;overflow:hidden'>{$x['account']}</div></td>
+                <td><div style='width:70px;overflow:hidden'><font color='{$coloramount}'>{$x['amount']}</font></div></td>
+		<td><div style='width:110px;overflow:hidden'><font color='{$colorconfirms}'>{$x['confirmations']}</font></div></td>
+                <td>{$date}</td>
+                <td><div style='width:120px;overflow:hidden'>{$x['txid']}</div></td>
+		<td>
+			<form action='comment' method='POST'><input type='hidden'>
+				<button class='btn btn-default btn-block ' type='submit' name='txid' value={$x['txid']}>Add Comment</button>
+			</form>
+		</td>
+                </tr>";
+	  }
 	  else {
             echo "<td>{$x['address']}</td>
                 <td><div style='width:60px;overflow:hidden'>{$x['account']}</div></td>

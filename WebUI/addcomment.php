@@ -33,7 +33,7 @@ if($_POST['comment'] != ""){
    addComment();
    print_r('You have added the comment ');
    print_r($_POST['comment']);
-   echo " to ";
+   echo " to txid ";
    echo $_POST['txid']; 
 }
 	
