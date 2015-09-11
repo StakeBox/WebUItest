@@ -4,8 +4,9 @@ include ("pass.php");
 $txid = $_POST['txid'];
 	
 ?>
+<center><p>Add comment to transaction <?php echo $_POST['txid']; ?>
 <div class="panel panel-default">
-  <center><p>Add comment to transaction <?php echo $_POST['txid']; ?>
+  
     <table class="table-hover table-condensed table-bordered table">
         <form action="addcomment" method="POST"><input type="hidden">
                 <tr>
