@@ -43,11 +43,11 @@ if($_POST['comment'] != ""){
             <input type="hidden" name="a">
                 <tr>
                     <td><center><b>Comment to add:</b></center></td>
-                    <td><input class="form-control" type="text" name="address" value="<?php print($address); ?>"></td>
+                    <td><input class="form-control" type="text" name="address" value="comment"></td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td><button class='btn btn-default' type="submit" value="Preview"><b>Preview</b></button></td>
+                    <td><button class='btn btn-default' type="submit" value="addComment"><b>Add Comment</b></button></td>
 		</tr>
         </form>
     </table>
