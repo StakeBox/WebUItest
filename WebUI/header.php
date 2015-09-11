@@ -53,7 +53,7 @@
 
 	$commits = json_decode(file_get_contents("https://api.github.com/repos/stakebox/webui/tags"));
 
-	$current_tag = $commits[1]->name;
+	$current_tag = $commits->name;
 	$ref_tag = "1.1.0";
 
 	if (!strcmp($current_tag, $ref_tag))
