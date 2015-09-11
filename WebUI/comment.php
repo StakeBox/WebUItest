@@ -1,7 +1,7 @@
 <?php 
 include ("header.php");
 include ("pass.php");
-$txid = $_POST['txid'];
+
 
 	
 ?>
