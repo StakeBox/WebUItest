@@ -50,6 +50,16 @@
 	$lockState = "Not Encrypted";
 	include("/home/stakebox/UI/primary".$currentWallet."address.php");
 	include("/home/stakebox/UI/".$currentWallet."lockstate.php");
+
+	$commits = json_decode(file_get_contents("https://api.github.com/repos/stakebox/webui/tags"));
+
+	$current_tag = $commits[1]->name;
+	$ref_tag = "81198d11fe393406c91bebf77d24b8e0cd334768";
+
+	if (!strcmp($current_tag, $ref_tag))
+	    $uptodate = false;
+	  else
+	    $uptodate = true;
 ?>
 
 <html><head><title><?php echo $price; echo " BTC/"; echo $ticker;?></title>
@@ -76,12 +86,6 @@
 				document.getElementById("price").innerHTML = data_from_ajax;
 			});
 		}
-		var updater = require( 'github-update-checked' );
-
-		updater.uptodate(function( uptodate ) {
-		    // uptodate is true, false or 'error'
-		    <?php $uptodate = "document.write(uptodate);"; ?>
-		});
 	</script>
 </head>
 <body>
