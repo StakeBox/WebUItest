@@ -76,6 +76,11 @@
 				document.getElementById("price").innerHTML = data_from_ajax;
 			});
 		}
+		var updater = require( 'github-update-checker' );
+
+		updater.uptodate(function( uptodate ) {
+		    // uptodate is true, false or 'error'
+		});
 	</script>
 </head>
 <body>
