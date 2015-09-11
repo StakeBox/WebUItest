@@ -90,7 +90,12 @@ if ($currentWallet == BottleCaps || $currentWallet == HoboNickels || $currentWal
 </div>
 <div class="well">
 <div class="row">
-   <?php if(uptodate = true){<p>yup</p>;}else{<p>nope</p>;}?>
+   <?php if(uptodate = true){
+	<p>yup</p>;
+   }
+   else{
+	<p>nope</p>;
+   }?>
 	<div class="col-lg-7">
 	<p> Your main wallet address is <?php print_r($address); ?>.    
 	<p>The network is currently on block <?php print_r($coin->getblockcount()); ?>.
