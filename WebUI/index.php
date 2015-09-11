@@ -120,7 +120,7 @@ if ($currentWallet == BottleCaps || $currentWallet == HoboNickels || $currentWal
 	  <div class='form-group'>
 	  <form action='notes' method='POST'><input type='hidden'>
 	    <label for='notes'>Notes:</label>
-	      <textarea class='form-control' name='notes' id='notes' cols='60' rows='10' value=$notes></textarea>
+	      <textarea class='form-control' name='notes' id='notes' cols='60' rows='10' value=echo $notes;></textarea>
 		<button class='btn btn-default' type='submit' value='setprimary'>Save Notes</button>
 	  </form>
 	  </div>
