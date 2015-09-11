@@ -51,6 +51,7 @@ $commentFile = "/home/stakebox/UI/".$currentWallet.$txid."comment.php";
                 </tr>";
 	  }
 	  elseif(file_exists($commentFile)){
+	   include("$commentFile");
             echo "<td>{$x['address']}</td>
                 <td><div style='width:60px;overflow:hidden'>{$x['account']}</div></td>
                 <td><div style='width:70px;overflow:hidden'><font color='{$coloramount}'>{$x['amount']}</font></div></td>
@@ -58,9 +59,7 @@ $commentFile = "/home/stakebox/UI/".$currentWallet.$txid."comment.php";
                 <td>{$date}</td>
                 <td><div style='width:120px;overflow:hidden'>{$x['txid']}</div></td>
 		<td>
-			<form action='comment' method='POST'><input type='hidden'>
-				<button class='btn btn-default btn-block ' type='submit' name='txid' value={$x['txid']}>Add Comment</button>
-			</form>
+		echo $comment;
 		</td>
                 </tr>";
 	  }
