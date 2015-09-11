@@ -66,10 +66,11 @@
 	$current_tag = $commits;
 	$ref_tag = "1.1.0";
 
-	if (!strcmp($current_tag, $ref_tag))
+	if (!strcmp($current_tag, $ref_tag)){
 	    $uptodate = false;
 	  else
 	    $uptodate = true;
+	}
 ?>
 
 <html><head><title><?php echo $price; echo " BTC/"; echo $ticker;?></title>
