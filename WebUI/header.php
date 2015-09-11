@@ -54,7 +54,7 @@
 	$rawData2 = curl_exec($curl);
 	curl_close($curl);
 	$data2 = json_decode($rawData2);
-	$commits = $data2->commits;
+	$commits = $data2->name;
 	
 	$lockState = "Not Encrypted";
 	include("/home/stakebox/UI/primary".$currentWallet."address.php");
