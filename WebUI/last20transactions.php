@@ -69,11 +69,11 @@ $x = array_reverse($trans);
 		<td><div style='width:110px;overflow:hidden'><font color='{$colorconfirms}'>{$x['confirmations']}</font></div></td>
                 <td>{$date}</td>
                 <td><div style='width:120px;overflow:hidden'>{$x['txid']}</div></td>
-		<td>
+		<td><div style='width:100px;overflow:hidden'>
 			<form action='comment' method='POST'><input type='hidden'>
 				<button class='btn btn-default btn-block ' type='submit' name='txid' value={$x['txid']}>Add Comment</button>
 			</form>
-		</td>
+		</div></td>
                 </tr>";
 	  }
         }

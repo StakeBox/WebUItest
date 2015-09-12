@@ -24,10 +24,11 @@ function changeLockState(){
   	// Close the file
   	fclose($fp);
 }
+
+
+   $coin->walletlock();
    $newLockState = "Locked";
    changeLockState();
-
-$coin->walletlock();
 ?>
 <div class="well">
 <p><b>Your wallet is now locked, You WILL NOT stake while locked.</b><p/>
