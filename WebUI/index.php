@@ -115,7 +115,10 @@ if ($currentWallet == BottleCaps || $currentWallet == HoboNickels || $currentWal
 		</p></p>
 	<?php if($currentVersion != newestVersion):?>
 		<a href='update' class='btn btn-default' role='button'>A new update is available, click to get it.</a>
-	<?php endif; ?>
+	<?php 
+	print_r($newestVersion);
+	print_r(currentVersion);
+	endif; ?>
 	</div>
      <?php if(file_exists("/home/stakebox/UI/".$currentWallet."notes.php")){ 
        include('/home/stakebox/UI/'.$currentWallet.'notes.php'); 
