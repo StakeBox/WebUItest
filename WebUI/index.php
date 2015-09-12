@@ -113,7 +113,7 @@ if ($currentWallet == BottleCaps || $currentWallet == HoboNickels || $currentWal
 		<?php if ($hours > 1 && $days > 1)echo "$days days $hours hours $minutes minutes"?>
 	<?php endif; ?>
 		</p></p>
-	<?php if($ref_tag != $current_tag):?>
+	<?php if($currentVersion != newestVersion):?>
 		<a href='update' class='btn btn-default' role='button'>A new update is available, click to get it.</a>
 	<?php endif; ?>
 	</div>

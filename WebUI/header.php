@@ -73,12 +73,12 @@
         	$rawData2 = curl_exec($curl);
         	curl_close($curl);
 	        $data2 = json_decode($rawData2);
-		$current_tag = $data2[0]->name;
+		$current = $data2[0]->name;
 	        //update lastrun.log with current time
 	        file_put_contents($lastRunLog, time());
 		//update version.php with current version
 		$fp = fopen($versionLocation, "w");
-	  	fwrite($fp, "<?php\n\$version='$current_tag';\n?>");	  	
+	  	fwrite($fp, "<?php\n\$newestVersion='$current';\n?>");	  	
 	  	fclose($fp);
 		
 	    }
@@ -94,7 +94,7 @@
 
 
 	
-	$ref_tag = "1.1.1";
+	$currentVersion = "1.1.1";
 
 	if ($ref_tag != $current_tag){
 	    $uptodate = "update available";
