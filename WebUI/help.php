@@ -4,10 +4,10 @@
    
    <div style="padding: 5px 30px 5px;">
       <div class="row">
-         <p><h4>
+         <p><h5>
             This page is here to describe all of the functions of the WebUI, and give 
             some pointers on best practices.
-         </p></h4>
+         </p></h5>
       </div><!-- /.row -->
    </div><!-- /.padding -->
 </div><!-- /.well -->
