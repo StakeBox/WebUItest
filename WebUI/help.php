@@ -13,17 +13,9 @@ include ("pass.php");
 </div><!-- /.well -->
 
 <div class="well">
-
-
-
-           <p>
-
-
    <b><a name="accounts&addresses">Server Section:</a></b>
       <div style="padding: 5px 15px 5px;">
 <div class="row">
-   Server Section:
-</p>
 <p>
    Get Server Info: Shows you some of the most important 
    information regarding the wallet for the coin you are currently working with.
@@ -77,54 +69,49 @@ include ("pass.php");
 </div><!-- /.well -->
 
 <div class="well">
-   <b><a name="transactions">Transactions</a></b>
+   <b><a name="transactions">Accounts & Addresses Section</a></b>
       <div style="padding: 5px 15px 5px;">
          <div class="row">
-            <div class="col-lg-2">
-               <a href="last20transactions" class='btn btn-default' role='button'>Last 20 Transactions</a><br>
-            </div><!-- /.col-lg-2 -->
-            <div class="col-lg-2">
-               <a href="listtransactions" class='btn btn-default' role='button'>All Transactions</a><br>
-            </div><!-- /.col-lg-2 -->
-         </div><!-- /.row -->
-      </div><!-- /.padding -->
-      <div style="padding: 10px 15px 5px;">
-         <div class="row">
-            <div class="col-lg-6">
-               <form action="listreceivedbyaddress" method="POST"><input type="hidden">
-                  <div class="input-group">
-                     <span class="input-group-btn">
-                        <button class='btn btn-default' type="submit" value="listreceivedbyaddress">List Received According To Address</button>      
-                     </span>
-                        <input class="form-control" type="text" name="minconf" placeholder="Minimum Confirmations">
-                  </div><!-- /input-group -->
-               </form>
-            </div><!-- /.col-lg-6 -->
-            <div class="col-lg-6">
-               <form action="gettransaction" method="POST"><input type="hidden">
-                  <div class="input-group">
-                     <span class="input-group-btn">
-                        <button class='btn btn-default' type="submit" value="gettransaction">Get Transaction Info</button>
-               	    </span>
-                        <input class="form-control" type="text" name="txid" placeholder="Transaction id">
-                  </div><!-- /input-group -->
-               </form>
-            </div><!-- /.col-lg-6 -->            
-         </div><!-- /.row -->
-         <div class="row">
-            <div class="col-lg-6">
-               <form action="listtransactionsbyaccount" method="POST"><input type="hidden">
-                     <div class="input-group">
-                        <span class="input-group-btn">
-	                   <button class='btn btn-default' type="submit" value="listtransactions">List Transactions</button>
-                        </span>
-	                   <input class="form-control" type="text" name="account" placeholder='Account:Use * for all leave blank for default account.'>
-	             </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
-            <div class="col-lg-6">
-                  <input class="form-control" type="number" name="count" placeholder="Number of transactions to show" size="3">
-               </form>
-            </div><!-- /.col-lg-6 -->
+           <p>
+
+</p>
+<p>
+   Get Total Balance: This will show the balance of all addresses in your wallet.
+</p>
+<p>
+   Set Main Address: Your main address is shown on the main page in text and as 
+   a QR code, if you would like to display a different address you can enter it here.
+</p>
+<p>
+   Get Addresses By Account: This will show all addresses associated with the account
+   that you enter in the text field. Leaving the field blank will show all of the 
+   addresses for the default account.
+</p>
+<p>
+   Get New Address: Use this function to create new addresses, if you leave 
+   the text field blank the new address will be associated with the default 
+   account. If you enter a nonexistent account in the field it will be created 
+   and the new address associated with it.
+</p>
+<p>
+   Get Account: Shows the account associated with the address entered in the text
+   field.
+</p>
+<p>
+   Set Account: This function has two text fields. 
+   Use it to associate an address with and account. The account will be created 
+   if it doesn't exist, leaving the account field blank will associate the 
+   address with the default account.
+</p>
+<p>
+   Get Received By Address: Put one of your addresses in the text field to see
+   how much has been received by that spacific address.
+</p>
+<p>
+   Validate Address: Enter any address to confirm if it is a valid address for the
+   current coin. This does not mean that it is your address, or even that somone
+   is using it, simply that it is valid.
+</p>
          </div><!-- /.row -->
       </div><!-- /.padding -->
 </div><!-- /.well -->
