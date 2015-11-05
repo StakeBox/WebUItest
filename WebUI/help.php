@@ -63,7 +63,6 @@ include ("pass.php");
    Change Currency: This button will take you to a page where you can choose from 
    a long list of currencies to display the value of your wallet in on the main page.
 </p>
-</div></div></div>
          </div><!-- /.row -->
       </div><!-- /.padding -->			
 </div><!-- /.well -->
