@@ -2,8 +2,6 @@
 include ("header.php");
 include ("pass.php");
 ?>
-	
-   <b><a name="server">Server</a></b>
       <div style="padding: 5px 30px 5px;">
          <div class="row">
 <p><h4>
@@ -18,92 +16,62 @@ include ("pass.php");
    <b><a name="accounts&addresses">Accounts & Addresses</a></b>
       <div style="padding: 5px 15px 5px;">
          <div class="row">
-            <div class="col-lg-2">
-               <form action="getbalance" method="POST"><input type="hidden">
-                  <div class="input-group">
-     	             <button class='btn btn-default' type="submit" value="getbalance">Get Total Balance</button>
-                  </div><!-- /input-group -->
-               </form>
-            </div><!-- /.col-lg-2 -->
-            <div class="col-lg-5">
-               <form action="setprimary" method="POST"><input type="hidden">
-                  <div class="input-group">
-                     <span class="input-group-btn">
-	                <button class='btn btn-default' type="submit" value="setprimary">Set Main Address</button>
-                     </span>
-                        <input class="form-control" type="text" name="address" placeholder="Address" >
-                  </div><!-- /input-group -->
-               </form>
-            </div><!-- /.col-lg-5 -->
-            <div class="col-lg-5">
-               <form action="getaddressesbyaccount" method="POST"><input type="hidden">
-                  <div class="input-group">
-                     <span class="input-group-btn">
-	                <button class='btn btn-default' type="submit" value="getaddressesbyaccount">Get Addresses By Account</button>
-	             </span>
-	                <input class="form-control" type="text" name="account" placeholder="Leave blank for default account" >
-                  </div><!-- /input-group -->
-               </form>
-            </div><!-- /.col-lg-5 -->
-         </div><!-- /.row -->
-         <div class="row">
-            <div class="col-lg-6">
-               <form action="getnewaddress" method="POST"><input type="hidden">
-                  <div class="input-group">
-                     <span class="input-group-btn">
-                        <button class='btn btn-default' type="submit" value="getnewaddress">Get New Address</button>
-                     </span>
-                        <input class="form-control" type="text" name="account" placeholder="Enter account you want to get a new address for.">
-                  </div><!-- /input-group -->
-               </form>
-            </div><!-- /.col-lg-6 -->
-            <div class="col-lg-6">
-               <form action="getaccount" method="POST"><input type="hidden">
-                  <div class="input-group">
-                     <span class="input-group-btn">
-	                <button class='btn btn-default' type="submit" value="getaccount">Get Account</button>
-	             </span>
-	                <input class="form-control" type="text" name="address" placeholder="Address you would like to know the account for.">
-	          </div><!-- /input-group -->
-               </form>
-            </div><!-- /.col-lg-6 -->
-         </div><!-- /.row -->
-         <div class="row">
-            <div class="col-lg-6">
-               <form action="setaccount" method="POST"><input type="hidden">
-                  <div class="input-group">
-                     <span class="input-group-btn">
-	                <button class='btn btn-default' type="submit" value="setaccount">Set Account</button>
-                     </span>
-	                <input class="form-control" type="text" name="address" placeholder="Address">
-	          </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
-            <div class="col-lg-6">
-                        <input class="form-control" type="text" name="account" placeholder="Account">
-               </form>
-            </div><!-- /.col-lg-6 -->
-         </div><!-- /.row -->
-         <div class="row">
-            <div class="col-lg-6">
-               <form action="getreceivedbyaddress" method="POST"><input type="hidden" name="a" value="getreceivedbyaddress">
-                  <div class="input-group">
-                     <span class="input-group-btn">
-	                <button class='btn btn-default' type="submit" value="getreceivedbyaddress">Get Received By Address</button>
-	             </span>
-	                <input class="form-control" type="text" name="address" placeholder="Address">
-	          </div><!-- /input-group -->
-               </form>
-            </div><!-- /.col-lg-6 -->
-            <div class="col-lg-6">
-               <form action="validateaddress" method="POST"><input type="hidden">
-                  <div class="input-group">
-                     <span class="input-group-btn">
-	                <button class='btn btn-default' type="submit" value="validateaddress">Validate Address</button>
-	             </span>
-	                <input class="form-control" type="text" name="address" placeholder="Address">
-	          </div><!-- /input-group -->
-               </form>
-            </div><!-- /.col-lg-6 -->
+           <p>
+<div class="well">
+
+   <b><a name="accounts&addresses">Server Section:</a></b>
+      <div style="padding: 5px 15px 5px;">
+<div class="row">
+   Server Section:
+</p>
+<p>
+   Get Server Info: Shows you some of the most important 
+   information regarding the wallet for the coin you are currently working with.
+   Including the wallet version you are running, your balance, the networks current 
+   block height, coins in circulation, etc. 
+</p>
+   Get Staking Info: Shows different information depending on the coin. If the
+   current coin you are looking at doesn't have the getstakinginfo RPC call you 
+   will be shown the information from either the getmininginfo or the list minting 
+   RPC call. because of this, the information shown may be of varying degrees 
+   of relevance to the actual staking of coins.
+</p>
+<p>
+   Get Peer Info: Displays IP addresses, connection times, wallet versions, and ban
+   scores of connected peers.
+</p>
+<p>
+   Get Connection Count: Simply shows how many peers your wallet is currently
+   connected to.
+</p>
+<p>
+   Power: Clicking this button will take you to a page where you can choose to
+   shut down, or restart you StakeBox.
+</p>
+<p>
+   Update: Use this to upgrade to the latest version of WebUI or the current wallet
+</p>
+<p>
+   Get Block #: Displays the most recent block that your wallet knows about. 
+   This can be handy to know if your wallet is fully synced, if you know the 
+   current block the network is on. It can also be used to verify that you are on
+   the correct chain in the event of a fork in the network.
+</p>
+<p>
+   All Commands: This will take you to a page that shows all of the available RPC
+   commands available for th current wallet. You can also use the page to pass 
+   any of the available commands. Most of the more commonly used command are 
+   simplified on the control page, but this gives you complete control of you wallet.
+</p>
+<p>
+   Change UI Password: Use this to change the password used to access the WebUI.
+   You should probably change the default password of "stakebox" right away.
+</p>
+<p>
+   Change Currency: This button will take you to a page where you can choose from 
+   a long list of currencies to display the value of your wallet in on the main page.
+</p>
+</div></div></div>
          </div><!-- /.row -->
       </div><!-- /.padding -->			
 </div><!-- /.well -->
