@@ -244,13 +244,12 @@ include ("pass.php");
                </form>
             </div><!-- /.col-lg-5 -->
             <div class="col-lg-5"> 
-               <form action="backupwallet" method="POST"><input type="hidden">
-                  <div class="input-group">
-                     <span class="input-group-btn">
+               <form action="downloadwallet" method="POST"><input type="hidden">
+
+
 	                <button class='btn btn-default' type="submit" value="backupwallet">Back Up Wallet</button>	       
-	             </span>
-                        <input class="form-control" type="text" name="destination" placeholder="Destination">
-                  </div><!-- /input-group -->
+
+
                </form>
             </div><!-- /.col-lg-5 -->
          </div><!-- /.row -->
