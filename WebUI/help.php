@@ -13,11 +13,11 @@ include ("pass.php");
 </div><!-- /.well -->
 
 <div class="well">
-   <b><a name="accounts&addresses">Accounts & Addresses</a></b>
-      <div style="padding: 5px 15px 5px;">
-         <div class="row">
+
+
+
            <p>
-<div class="well">
+
 
    <b><a name="accounts&addresses">Server Section:</a></b>
       <div style="padding: 5px 15px 5px;">
