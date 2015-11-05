@@ -3,5 +3,5 @@ include ("header.php");
 include ("pass.php");
 
 
-php include ("footer.php");
+include ("footer.php");
 ?>
