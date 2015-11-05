@@ -230,12 +230,12 @@ include ("pass.php");
          <div class="row">
             <div class="col-lg-2">
                <form action="walletlock" method="POST"><input type="hidden">
-                  <button class='btn btn-default btn-block ' type="submit" value="walletlock">Lock Your Wallet</button>
+                  <button class='btn btn-default btn-block' type="submit" value="walletlock">Lock Your Wallet</button>
                </form>
-            </div><!-- /.col-xs-2 -->
+            </div><!-- /.col-lg-2 -->
             <div class="col-lg-2"> 
                <form action="downloadwallet" method="POST"><input type="hidden">
-	          <button class='btn btn-default' type="submit" value="backupwallet">Back Up Wallet</button>	       
+	          <button class='btn btn-default btn-block' type="submit" value="backupwallet">Back Up Wallet</button>	       
                </form>
             </div><!-- /.col-lg-2 -->
             <div class="col-lg-8">
