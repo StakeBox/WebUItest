@@ -16,7 +16,7 @@
    <b><a name="server">Server Section:</a></b>
       <div style="padding: 5px 30px 5px;">
          <div class="row">
-            <p>
+            <h4><p>
                Get Server Info: Shows you some of the most important 
                information regarding the wallet for the coin you are currently working with.
                Including the wallet version you are running, your balance, the networks current 
@@ -63,7 +63,7 @@
             <p>
                Change Currency: This button will take you to a page where you can choose from 
                a long list of currencies to display the value of your wallet in on the main page.
-            </p>
+            </p></h4>
          </div><!-- /.row -->
       </div><!-- /.padding -->			
 </div><!-- /.well -->
@@ -72,7 +72,7 @@
    <b><a name="accounts&addresses">Accounts & Addresses Section</a></b>
       <div style="padding: 5px 30px 5px;">
          <div class="row">
-            <p>
+            <h4><p>
                Get Total Balance: This will show the balance of all addresses in your wallet.
             </p>
             <p>
@@ -108,7 +108,7 @@
                Validate Address: Enter any address to confirm if it is a valid address for the
                current coin. This does not mean that it is your address, or even that somone
                is using it, simply that it is valid.
-            </p>
+            </p></h4>
          </div><!-- /.row -->
       </div><!-- /.padding -->
 </div><!-- /.well -->
@@ -117,7 +117,7 @@
    <b><a name="transactions">Transactions Section:</a></b>
       <div style="padding: 5px 30px 5px;">
          <div class="row">
-            <p>
+            <h4><p>
                Last 20 Transactions: Pretty self explanatory, shows the wallets 20 most recent
                transactions.
             </p>
@@ -137,7 +137,7 @@
                List Transactions: Enter an account and the number of transactions you wish to 
                see in the two text fields and you will see only transactions associated 
                with that account.
-            </p>
+            </p></h4>
          </div><!-- /.row -->
       </div><!-- /.padding -->
 </div><!-- /.well -->
@@ -146,13 +146,13 @@
    <b><a name="sending">Sending Section:</a></b>
       <div style="padding: 5px 30px 5px;">
          <div class="row">
-            <p>
+            <h4><p>
                Send To Address: Sends the amount of coins selected to the address selected, 
                with the option to include a comment. 
             </p>
             <p>
                Send From Account: Sends coins from a specific account in your wallet.
-            </p>
+            </p></h4>
          </div><!-- /.row -->
       </div><!-- /.padding -->
 </div><!-- /.well -->
@@ -161,7 +161,7 @@
    <b><a name="security">Security Section:</a></b>
       <div style="padding: 5px 30px 5px;">
          <div class="row">
-            <p>
+            <h4><p>
                Lock Your Wallet: If your wallet is encrypted clicking this button will 
                lock it, if it is unlocked. If your wallet is unlocked for staking you will 
                need to use this to lock it before you can unlock it for sending. If it is 
@@ -203,7 +203,7 @@
                Import Private Key: You can use this to import private keys from other wallets
                that you have saved, the label, if included will be the account associated 
                with it.
-            </p>
+            </p></h4>
          </div><!-- /.row -->
       </div><!-- /.padding -->
 </div><!-- /.well -->
