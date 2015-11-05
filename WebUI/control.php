@@ -315,6 +315,17 @@ include ("pass.php");
                         <input class="form-control" type="text" name="label" placeholder="Label">
                </form>
             </div><!-- /.col-lg-2 -->
+	<div class="row">
+            <div class="col-lg-5"> 
+               <form action="downloadwallet" method="POST"><input type="hidden">
+                  <div class="input-group">
+                     <span class="input-group-btn">
+	                <button class='btn btn-default' type="submit" value="backupwallet">Back Up Wallet</button>	       
+	             </span>
+                  </div><!-- /input-group -->
+               </form>
+            </div><!-- /.col-lg-5 -->
+         </div><!-- /.row -->
       </div><!-- /.padding -->
 </div><!-- /.well -->
 </div>
