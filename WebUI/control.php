@@ -233,7 +233,7 @@ include ("pass.php");
                   <button class='btn btn-default btn-block ' type="submit" value="walletlock">Lock Your Wallet</button>
                </form>
             </div><!-- /.col-xs-2 -->
-            <div class="col-lg-5">
+            <div class="col-lg-8">
                <form action="encryptwallet" method="POST"><input type="hidden">
                   <div class="input-group">
                      <span class="input-group-btn">
@@ -242,16 +242,12 @@ include ("pass.php");
                         <input class="form-control" type="password" name="password" placeholder="Enter password you would like to use">
                   </div><!-- /input-group -->
                </form>
-            </div><!-- /.col-lg-5 -->
-            <div class="col-lg-5"> 
+            </div><!-- /.col-lg-8 -->
+            <div class="col-lg-2"> 
                <form action="downloadwallet" method="POST"><input type="hidden">
-
-
-	                <button class='btn btn-default' type="submit" value="backupwallet">Back Up Wallet</button>	       
-
-
+	          <button class='btn btn-default' type="submit" value="backupwallet">Back Up Wallet</button>	       
                </form>
-            </div><!-- /.col-lg-5 -->
+            </div><!-- /.col-lg-2 -->
          </div><!-- /.row -->
          <div class="row">
             <div class="col-lg-6">
