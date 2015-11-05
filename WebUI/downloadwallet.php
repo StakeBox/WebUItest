@@ -1,7 +1,7 @@
 <?php
 include ("header.php");
 include ("pass.php");
-$destination = "/var/www/html/webui/WebUI/wallet.dat";
+$destination = "/var/www/html/webui/WebUI/".$currentWallet."wallet.dat";
 ?>
 
 <?php 
