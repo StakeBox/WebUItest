@@ -140,6 +140,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand" href="./"><img src="logo.png" height="170%"></a>
 
@@ -149,6 +150,7 @@
 					<li><a href="last20transactions">Transactions</a></li>
 					<li><a href="sendcoins">Send Coins</a></li>
 					<li><a href="control">Control</a></li>
+					<li><a href="help">Help</a></li>
 				</ul>
 				<div class="navbar-right">
 					<p class="navbar-text"><?php 	echo "Current price is <b id='price'>{$price}</b> BTC on {$data->ticker->markets[0]->market}"; ?></p>
