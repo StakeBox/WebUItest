@@ -235,7 +235,7 @@ include ("pass.php");
             </div><!-- /.col-lg-2 -->
             <div class="col-lg-2"> 
                <form action="downloadwallet" method="POST"><input type="hidden">
-	          <button class='btn btn-default btn-block' type="submit" value="backupwallet">Back Up Wallet</button>	       
+	          <button class='btn btn-default btn-block' type="submit" value="backupwallet">Backup Wallet</button>	       
                </form>
             </div><!-- /.col-lg-2 -->
             <div class="col-lg-8">
@@ -291,7 +291,8 @@ include ("pass.php");
                <form action="dumpprivkey" method="POST"><input type="hidden">
                   <div class="input-group">
                      <span class="input-group-btn">
-	                <button class='btn btn-default' type="submit" value="dumpprivkey">Dump Private Key</button>	       </span>
+	                <button class='btn btn-default' type="submit" value="dumpprivkey">Dump Private Key</button>	      
+                     </span>
                         <input class="form-control" type="text" name="address" placeholder="Address">
 		     </span>
                   </div><!-- /input-group -->
@@ -306,10 +307,20 @@ include ("pass.php");
                         <input class="form-control" type="text" name="key" placeholder="Private Key">
                   </div><!-- /input-group -->
             </div><!-- /.col-lg-5 -->
-        <div class="col-xs-2">
+            <div class="col-xs-2">
                         <input class="form-control" type="text" name="label" placeholder="Label">
                </form>
             </div><!-- /.col-lg-2 -->
+
+<!-- The data encoding type, enctype, MUST be specified as below -->
+<form enctype="multipart/form-data" action="upload" method="POST">
+    <!-- MAX_FILE_SIZE must precede the file input field -->
+    <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
+    <!-- Name of input element determines name in $_FILES array -->
+    Send this file: <input name="userfile" type="file" />
+    <input type="submit" value="Send File" />
+</form>
+
       </div><!-- /.padding -->
 </div><!-- /.well -->
 </div>
