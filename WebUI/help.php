@@ -322,8 +322,10 @@ include ("pass.php");
 </p>
 <p>
 <div class="well">
+
    <b><a name="accounts&addresses">Server Section:</a></b>
       <div style="padding: 5px 15px 5px;">
+<div class="row">
    Server Section:
 </p>
 <p>
@@ -373,7 +375,7 @@ include ("pass.php");
    Change Currency: This button will take you to a page where you can choose from 
    a long list of currencies to display the value of your wallet in on the main page.
 </p>
-</div></div>
+</div></div></div>
 <div class="well">
 <p>
    Accounts & Addresses Section:
