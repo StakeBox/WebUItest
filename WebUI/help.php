@@ -2,14 +2,16 @@
 include ("header.php");
 include ("pass.php");
 ?>
-<p><h5>
+<p><h4>
    This page is here to describe all of the functions of the WebUI, and give 
    some pointers on best practices.
 </p>
+<div class="well">
 <p>
    Control Page Features:
 </p>
 <p>
+<div class="well">
    Server Section:
 </p>
 <p>
@@ -59,6 +61,8 @@ include ("pass.php");
    Change Currency: This button will take you to a page where you can choose from 
    a long list of currencies to display the value of your wallet in on the main page.
 </p>
+</div>
+<div class="well">
 <p>
    Accounts & Addresses Section:
 </p>
@@ -99,6 +103,8 @@ include ("pass.php");
    current coin. This does not mean that it is your address, or even that somone
    is using it, simply that it is valid.
 </p>
+</div>
+<div class="well">
 <p>
    Transactions Section:
 </p>
@@ -123,6 +129,8 @@ include ("pass.php");
    see in the two text fields and you will see only transactions associated 
    with that account.
 </p>
+</div>
+<div class ="well">
 <p>
    Sending Section:
 </p>
@@ -133,6 +141,8 @@ include ("pass.php");
 <p>
    Send From Account: Sends coins from a specific account in your wallet.
 </p>
+</div>
+<div class="well">
 <p>
    Security Section:
 </p>
@@ -178,7 +188,9 @@ include ("pass.php");
    Import Private Key: You can use this to import private keys from other wallets
    that you have saved, the label, if included will be the account associated 
    with it.
-</p>
+</p></h4>
+</div>
+</div>
 </div>
 <?php
 include ("footer.php");
