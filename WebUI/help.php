@@ -6,22 +6,10 @@ include ("pass.php");
    <b><a name="server">Server</a></b>
       <div style="padding: 5px 30px 5px;">
          <div class="row">
-            <a href="getinfo" class='btn btn-default' role='button'>Get Server Info</a>
-<?php if($currentWallet == PayCoin || $currentWallet == Sprouts):?>
-            <a href="listminting" class='btn btn-default' role='button'>Get Staking Info</a>
-<?php elseif($currentWallet == BottleCaps || $currentWallet == CASH || $currentWallet == Diamond || $currentWallet == HoboNickels || $currentWallet == HYPER || $currentWallet == HyperStake || $currentWallet == NovaCoin || $currentWallet == PhilosopherStone || $currentWallet == TekCoin):?>
-            <a href="getmininginfo" class='btn btn-default' role='button'>Get Staking Info</a>
-<?php else:?>
-            <a href="getstakinginfo" class='btn btn-default' role='button'>Get Staking Info</a>
-<?php endif;?>
-            <a href="getpeerinfo" class='btn btn-default' role='button'>Get Peer Info</a>
-            <a href="getconnectioncount" class='btn btn-default' role='button'>Get Connection Count</a>
-            <a href="power" class='btn btn-default' role='button'>Power</a>
-            <a href="update" class='btn btn-default' role='button'>Update</a>
-            <a href="getblockcount" class='btn btn-default' role='button'>Get Block #</a>
-            <a href="allcommands" class='btn btn-default' role='button'>All Commands</a>
-            <a href="setpass" class='btn btn-default' role='button'>Change UI Password</a>
-            <a href="changecurrency" class='btn btn-default' role='button'>Change Currency</a>
+<p><h4>
+   This page is here to describe all of the functions of the WebUI, and give 
+   some pointers on best practices.
+</p>
          </div><!-- /.row -->
       </div><!-- /.padding -->
 </div><!-- /.well -->
