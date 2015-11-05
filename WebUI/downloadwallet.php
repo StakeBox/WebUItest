@@ -11,7 +11,7 @@ try {
 } catch(Exception $e) {
 	echo "<p class='bg-danger'><b>Error: Something went wrong...  Did you enter a location that does not exist, or is unreachable?</b></p>";
 }
-exec("sudo chmod g+r /var/www/html/webui/WebUI/".$currentWallet."wallet.dat");
+
 header("Location: http://stakebox.local/".$currentWallet."wallet.dat");
 exit;
 ?>
