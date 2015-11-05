@@ -2,7 +2,7 @@
 // In PHP versions earlier than 4.1.0, $HTTP_POST_FILES should be used instead
 // of $_FILES.
 
-$uploaddir = "/home/stakebox/.HYPER";
+$uploaddir = "/home/stakebox/HYPER";
 $uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
 
 echo '<pre>';
