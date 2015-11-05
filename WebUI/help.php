@@ -211,8 +211,7 @@ include ("pass.php");
 </div><!-- /.well -->
 
 </div>
-</div>
-</div>
+
 <?php
 include ("footer.php");
 ?>
