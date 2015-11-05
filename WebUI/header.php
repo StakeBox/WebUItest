@@ -68,7 +68,7 @@
         	// fetch github info
         	$curl = curl_init();
 		curl_setopt($curl, CURLOPT_HTTPHEADER,array('User-Agent: StakeBox'));
-        	curl_setopt($curl, CURLOPT_URL, "https://api.github.com/repos/stakebox/webuitest/tags");
+        	curl_setopt($curl, CURLOPT_URL, "https://api.github.com/repos/stakebox/webui/tags");
         	curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
         	$rawData2 = curl_exec($curl);
         	curl_close($curl);
@@ -94,7 +94,7 @@
 
 
 	
-	$currentVersion = '1.1.2';
+	$currentVersion = 'v1.2.1';
 
 	if ($ref_tag != $current_tag){
 	    $uptodate = "update available";

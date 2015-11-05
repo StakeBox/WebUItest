@@ -9,7 +9,7 @@ include ("pass.php");
             <a href="getinfo" class='btn btn-default' role='button'>Get Server Info</a>
 <?php if($currentWallet == PayCoin || $currentWallet == Sprouts):?>
             <a href="listminting" class='btn btn-default' role='button'>Get Staking Info</a>
-<?php elseif($currentWallet == BottleCaps || $currentWallet == CASH || $currentWallet == Diamond || $currentWallet == HoboNickels || $currentWallet == HYPER || $currentWallet == NovaCoin || $currentWallet == PhilosopherStone):?>
+<?php elseif($currentWallet == BottleCaps || $currentWallet == CASH || $currentWallet == Diamond || $currentWallet == HoboNickels || $currentWallet == HYPER || $currentWallet == HyperStake || $currentWallet == NovaCoin || $currentWallet == PhilosopherStone || $currentWallet == TekCoin):?>
             <a href="getmininginfo" class='btn btn-default' role='button'>Get Staking Info</a>
 <?php else:?>
             <a href="getstakinginfo" class='btn btn-default' role='button'>Get Staking Info</a>
@@ -22,7 +22,6 @@ include ("pass.php");
             <a href="allcommands" class='btn btn-default' role='button'>All Commands</a>
             <a href="setpass" class='btn btn-default' role='button'>Change UI Password</a>
             <a href="changecurrency" class='btn btn-default' role='button'>Change Currency</a>
-            <a href="startstop" class='btn btn-default' role='button'>Start Or Stop Wallet</a>
          </div><!-- /.row -->
       </div><!-- /.padding -->
 </div><!-- /.well -->
