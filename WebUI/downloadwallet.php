@@ -11,7 +11,7 @@ try {
 } catch(Exception $e) {
 	echo "<p class='bg-danger'><b>Error: Something went wrong...  Did you enter a location that does not exist, or is unreachable?</b></p>";
 }
-exec("chmod g+r /var/www/html/webui/WebUI/HYPERwallet.dat");
+shell_exec("chmod g+r /var/www/html/webui/WebUI/HYPERwallet.dat");
 ?>
 </div>
 <?php include ("footer.php");?>
