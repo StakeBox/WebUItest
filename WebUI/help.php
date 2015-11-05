@@ -1,6 +1,5 @@
 <?php
    include ("header.php");
-   include ("pass.php");
 ?>
    
    <div style="padding: 5px 30px 5px;">
