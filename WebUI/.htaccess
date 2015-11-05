@@ -4,6 +4,7 @@ deny from all
 Options -Indexes
 DirectoryIndex index.php       
 order deny,allow
+Allow from all
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
