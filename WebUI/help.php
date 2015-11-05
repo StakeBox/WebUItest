@@ -116,51 +116,31 @@ include ("pass.php");
 </div><!-- /.well -->
 
 <div class="well">
-   <b><a name="sending">Sending</a></b>
+   <b><a name="sending">Transactions Section:</a></b>
       <div style="padding: 5px 15px 5px;">
          <div class="row">
-            <div class="col-lg-6">
-               <form action="sendtoaddress" method="POST"><input type="hidden">
-                  <div class="input-group">
-                     <span class="input-group-btn">
-	                <button class='btn btn-default' type="submit" value="sendtoaddress">Send To Address</button>
-	             </span>
-	                <input class="form-control" type="text" name="address" placeholder="Address">
-	          </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
-            <div class="col-lg-6">
-               <input class="form-control" type="text" name="amount" placeholder="Amount">
-            </div><!-- /.col-lg-6 -->
-         </div><!-- /.row -->
-         <div class="row">
-            <div class="col-lg-12">
-               <input class="form-control" type="text" name="comment" placeholder="Comment">
-               </form>
-            </div><!-- /.col-lg-12 -->
-         </div><!-- /.row -->
-      </div><!-- /.style -->
-      <div style="padding: 10px 15px 5px;">
-         <div class="row">
-            <div class="col-lg-6">
-               <form action="sendfrom" method="POST"><input type="hidden">
-                  <div class="input-group">
-                     <span class="input-group-btn">
-                        <button class='btn btn-default'type="submit" value="sendfrom">Send From Account</button>
-                     </span>
-                        <input class="form-control" type="text" name="account" placeholder="From Account">
-                  </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
-            <div class="col-lg-6">
-               <input class="form-control" type="text" name="address" placeholder="To Address">
-            </div><!-- /.col-lg-6 -->
-         </div><!-- /.row -->                
-         <div class="row">
-            <div class="col-lg-6">
-               <input class="form-control" type="text" name="amount" placeholder="amount">
-            </div><!-- /.col-lg-6 -->
-            <div class="col-lg-6">
-               <input class="form-control" type="text" name="comment" placeholder="Comment">
-            </div><!-- /.col-lg-6 -->
+
+<p>
+   Last 20 Transactions: Pretty self explanatory, shows the wallets 20 most recent
+   transactions.
+</p>
+<p>
+   All Transactions: You guessed it, see all of you Transactions.
+</p>
+<p>
+   List Received According To Address: Shows the amount received by all addresses 
+   in your wallet, slit up by address. You can enter a number in the text field
+   and only see transactions with that many, or more confimations.
+</p>
+<p>
+   Get Transaction Info: Enter a transaction ID in the text field to see detailed
+   information about that specific transaction.
+</p>
+<p>
+   List Transactions: Enter an account and the number of transactions you wish to 
+   see in the two text fields and you will see only transactions associated 
+   with that account.
+</p>
          </div><!-- /.row -->
          </form>
       </div><!-- /.padding -->
@@ -170,89 +150,13 @@ include ("pass.php");
    <b><a name="security">Security</a></b>
       <div style="padding: 5px 15px 5px;">
          <div class="row">
-            <div class="col-lg-2">
-               <form action="walletlock" method="POST"><input type="hidden">
-                  <button class='btn btn-default btn-block' type="submit" value="walletlock">Lock Your Wallet</button>
-               </form>
-            </div><!-- /.col-lg-2 -->
-            <div class="col-lg-2"> 
-               <form action="downloadwallet" method="POST"><input type="hidden">
-	          <button class='btn btn-default btn-block' type="submit" value="backupwallet">Backup Wallet</button>	       
-               </form>
-            </div><!-- /.col-lg-2 -->
-            <div class="col-lg-8">
-               <form action="encryptwallet" method="POST"><input type="hidden">
-                  <div class="input-group">
-                     <span class="input-group-btn">
-	                <button class='btn btn-default' type="submit" value="encryptwallet">Encrypt Wallet</button>
-	             </span>
-                        <input class="form-control" type="password" name="password" placeholder="Enter password you would like to use">
-                  </div><!-- /input-group -->
-               </form>
-            </div><!-- /.col-lg-8 -->
-         </div><!-- /.row -->
-         <div class="row">
-            <div class="col-lg-6">
-               <form action="walletpassphrasechange" method="POST"><input type="hidden">
-                  <div class="input-group">
-                     <span class="input-group-btn">
-	                <button class='btn btn-default' type="submit" value="walletpassphrasechange">Change Wallet Password</button>
-	             </span>
-	                <input class="form-control" type="password" name="old" placeholder="Old Password">
-                  </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
-            <div class="col-lg-6">
-                        <input class="form-control" type="password" name="new" placeholder="New Password">
-               </form>
-            </div><!-- /.col-lg-6 -->
-         </div><!-- /.row -->
-         <div class="row">
-            <div class="col-lg-6">
-               <form action="unlockstaking" method="POST"><input type="hidden">
-                  <div class="input-group">
-                     <span class="input-group-btn">
-                        <button class='btn btn-default' type="submit" value="unlockstaking">Unlock Wallet For Staking Only</button>
-                     </span>
-                        <input class="form-control" type="password" name="password" placeholder="Password">
-                  </div><!-- /input-group -->            
-               </form>
-            </div><!-- /.col-lg-6 -->
-            <div class="col-lg-6">
-               <form action="unlockwallet" method="POST"><input type="hidden">
-                  <div class="input-group">
-                     <span class="input-group-btn">
-                        <button class='btn btn-default' type="submit" value="unlockwallet">Unlock Wallet To Send</button>	
-                     </span>
-	                <input class="form-control" type="password" name="password" placeholder="password">
-                  </div><!-- /input-group -->
-               </form>
-            </div><!-- /.col-lg-6 -->
-         </div><!-- /.row -->
-         <div class="row">
-            <div class="col-lg-5">  
-               <form action="dumpprivkey" method="POST"><input type="hidden">
-                  <div class="input-group">
-                     <span class="input-group-btn">
-	                <button class='btn btn-default' type="submit" value="dumpprivkey">Dump Private Key</button>	      
-                     </span>
-                        <input class="form-control" type="text" name="address" placeholder="Address">
-		     </span>
-                  </div><!-- /input-group -->
-               </form>
-            </div><!-- /.col-lg-5 -->
-            <div class="col-lg-5"> 
-               <form action="importprivkey" method="POST"><input type="hidden">
-                  <div class="input-group">
-                     <span class="input-group-btn">
-	                <button class='btn btn-default' type="submit" value="importwallet">Import Private Key</button>	       
-	             </span>
-                        <input class="form-control" type="text" name="key" placeholder="Private Key">
-                  </div><!-- /input-group -->
-            </div><!-- /.col-lg-5 -->
-            <div class="col-xs-2">
-                        <input class="form-control" type="text" name="label" placeholder="Label">
-               </form>
-            </div><!-- /.col-lg-2 -->
+            <p>
+   Send To Address: Sends the amount of coins selected to the address selected, 
+   with the option to include a comment. 
+</p>
+<p>
+   Send From Account: Sends coins from a specific account in your wallet.
+</p>
       </div><!-- /.padding -->
 </div><!-- /.well -->
 <p><h4>
