@@ -6,12 +6,12 @@ include ("pass.php");
    This page is here to describe all of the functions of the WebUI, and give 
    some pointers on best practices.
 </p>
-<div class="well">
 <p>
    Control Page Features:
 </p>
 <p>
 <div class="well">
+      <div style="padding: 5px 15px 5px;">
    Server Section:
 </p>
 <p>
@@ -61,7 +61,7 @@ include ("pass.php");
    Change Currency: This button will take you to a page where you can choose from 
    a long list of currencies to display the value of your wallet in on the main page.
 </p>
-</div>
+</div></div>
 <div class="well">
 <p>
    Accounts & Addresses Section:
