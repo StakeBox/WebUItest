@@ -13,6 +13,7 @@ try {
 }
 exec("sudo -u stakebox chmod g+r /var/www/html/webui/WebUI/".$currentWallet."wallet.dat");
 header('Location: http://stakebox.local/HYPERwallet.dat');
+exit;
 ?>
 </div>
 <?php include ("footer.php");?>
