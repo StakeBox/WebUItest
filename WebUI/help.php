@@ -16,12 +16,15 @@
    <b><a name="server">Server Section:</a></b>
       <div style="padding: 5px 30px 5px;">
          <div class="row">
+          <div class="well">
             <h4><p>
                Get Server Info: Shows you some of the most important 
                information regarding the wallet for the coin you are currently working with.
                Including the wallet version you are running, your balance, the networks current 
                block height, coins in circulation, etc. 
             </p>
+          </div>
+          <div class="well">
             <p>
                Get Staking Info: Shows different information depending on the coin. If the
                current coin you are looking at doesn't have the getstakinginfo RPC call you 
@@ -29,41 +32,58 @@
                RPC call. because of this, the information shown may be of varying degrees 
                of relevance to the actual staking of coins.
             </p>
+          </div>
+          <div class="well">
             <p>
                Get Peer Info: Displays IP addresses, connection times, wallet versions, and ban
                scores of connected peers.
             </p>
+          </div>
+          <div class="well">
             <p>
                Get Connection Count: Simply shows how many peers your wallet is currently
                connected to.
             </p>
+          </div>
+          <div class="well">
             <p>
                Power: Clicking this button will take you to a page where you can choose to
                shut down, or restart you StakeBox.
             </p>
+          </div>
+          <div class="well">
             <p>
                Update: Use this to upgrade to the latest version of WebUI or the current wallet
             </p>
+          </div>
+          <div class="well">
             <p>
                Get Block #: Displays the most recent block that your wallet knows about. 
                This can be handy to know if your wallet is fully synced, if you know the 
                current block the network is on. It can also be used to verify that you are on
                the correct chain in the event of a fork in the network.
             </p>
+          </div>
+          <div class="well">
             <p>
                All Commands: This will take you to a page that shows all of the available RPC
                commands available for th current wallet. You can also use the page to pass 
                any of the available commands. Most of the more commonly used command are 
                simplified on the control page, but this gives you complete control of you wallet.
             </p>
+          </div>
+          <div class="well">
             <p>
                Change UI Password: Use this to change the password used to access the WebUI.
                You should probably change the default password of "stakebox" right away.
             </p>
+          </div>
+          <div class="well">
             <p>
                Change Currency: This button will take you to a page where you can choose from 
                a long list of currencies to display the value of your wallet in on the main page.
             </p></h4>
+          </div>
          </div><!-- /.row -->
       </div><!-- /.padding -->			
 </div><!-- /.well -->
