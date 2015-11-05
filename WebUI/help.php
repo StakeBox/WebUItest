@@ -11,6 +11,7 @@ include ("pass.php");
 </p>
 <p>
 <div class="well">
+   <b><a name="accounts&addresses">Server Section:</a></b>
       <div style="padding: 5px 15px 5px;">
    Server Section:
 </p>
