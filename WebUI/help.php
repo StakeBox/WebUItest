@@ -210,7 +210,7 @@ include ("pass.php");
       </div><!-- /.padding -->
 </div><!-- /.well -->
 
-</div>
+
 
 <?php
 include ("footer.php");
