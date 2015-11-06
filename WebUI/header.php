@@ -110,7 +110,6 @@ function changeLockState(){
 
 	include("/home/stakebox/UI/version.php");
 	include("/home/stakebox/UI/primary".$currentWallet."address.php");
-	include("/home/stakebox/UI/".$currentWallet."lockstate.php");
 	if (!file_exists("/home/stakebox/UI/".$currentWallet."lockstate.php")) {
 		try {
 			$coin->walletlock();
@@ -120,9 +119,9 @@ function changeLockState(){
 			$lockState = "Not Encrypted";
 		}
 	}
-
-		
-
+	else {
+		include("/home/stakebox/UI/".$currentWallet."lockstate.php");
+	}
 
 	$currentVersion = 'v1.2.2';
 
