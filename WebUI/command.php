@@ -73,8 +73,10 @@ if($var7 == "true") {
 	$var7 = (bool)1;
 }
 if($command == "stop") {
-	$newLockState = "Locked";
-	changeLockState();
+	if($lockState != "Not Encrypted") {
+		$newLockState = "Locked";
+		changeLockState();
+	}
 }
 ?>
 
