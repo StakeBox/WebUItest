@@ -1,8 +1,8 @@
 <?php
 include ("header.php");
 include ("pass.php");
-$currentWallet = LiteDoge;
-$_SESSION['currentWallet'] = $currentWallet;
+foreach ($wallets as $walletName => $walletData)
+	echo '<li><a href="#">'.$walletName.'</a></li>';
 $coin->walletlock();
 $currentWallet = HYPER;
 $coin->walletlock();
