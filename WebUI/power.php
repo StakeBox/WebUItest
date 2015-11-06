@@ -25,6 +25,7 @@ $status = $_POST["status"];
   
 if ($status == "reboot"){ 
   if ($lockState != "Not Encrypted") { 
+    header("Location: http://stakebox.local/lockall");
     $newLockState = "Locked";
     changeLockState();
   }
@@ -33,6 +34,7 @@ if ($status == "reboot"){
 }  
 if ($status == "shutdown"){ 
   if ($lockState != "Not Encrypted") { 
+    header("Location: http://stakebox.local/lockall");
     $newLockState = "Locked";
     changeLockState();
   }
