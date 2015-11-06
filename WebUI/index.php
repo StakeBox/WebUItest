@@ -13,12 +13,7 @@ if($primary!=""){
 else{
         $address = $coin->getaddressesbyaccount("")[0];
 	}
-if($lockState!=""){
-	$walletLockState = $lockState;
-}
-else{
-	$walletLockState = "Unlocked";
-}
+
 if ($currentWallet == ArchCoin || $currentWallet == BlackCoin || $currentWallet == Clams || $currentWallet == Crave || $currentWallet == FlutterCoin || $currentWallet == GoldPieces || $currentWallet == LiteDoge || $currentWallet == Navajo || $currentWallet == NetCoin || $currentWallet == PayCon || $currentWallet == RATECoin || $currentWallet == ShadowCash){
 	$stakinginfo = $coin->getstakinginfo(); 
 	$x = array_reverse($stakinginfo); 
