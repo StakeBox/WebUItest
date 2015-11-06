@@ -119,9 +119,9 @@ function changeLockState(){
 			$lockState = "Not Encrypted";
 		}
 	}
-	else {
+
 		include("/home/stakebox/UI/".$currentWallet."lockstate.php");
-	}
+
 
 	$currentVersion = 'v1.2.2';
 
