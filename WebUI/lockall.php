@@ -1,7 +1,8 @@
 <?php
 include ("header.php");
 include ("pass.php");
-$currentWallet = liteDoge;
+$currentWallet = LiteDoge;
+
 $coin->walletlock();
 $currentWallet = HYPER;
 $coin->walletlock();
