@@ -116,7 +116,8 @@ function changeLockState(){
 			$newLockState = "Locked";
 			changeLockState();
 		} catch(Exception $e) {	
-			$lockState = "Not Encrypted";
+			$newLockState = "Not Encrypted";
+			changeLockState();
 		}
 	}
 	else {
