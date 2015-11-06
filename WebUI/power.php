@@ -265,9 +265,6 @@ $coin = new jsonRPCClient("{$coinu['protocol']}://{$coinu['user']}:{$coinu['pass
 $coin->walletlock();
 $newLockState = "Locked";
 changeLockState();
-
-    $newLockState = "Locked";
-    changeLockState();
   }
     exec("python /var/www/html/webui/WebUI/libs/reboot.py");  
     print '<h2>Your StakeBox is rebooting ...</h2>';  
@@ -514,9 +511,6 @@ $coin = new jsonRPCClient("{$coinu['protocol']}://{$coinu['user']}:{$coinu['pass
 $coin->walletlock();
 $newLockState = "Locked";
 changeLockState();
-
-    $newLockState = "Locked";
-    changeLockState();
   }
     exec("python /var/www/html/webui/WebUI/libs/shutdown.py");  
     print '<h2>Your StakeBox is shutting down ...</h2>';  
