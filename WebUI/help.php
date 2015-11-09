@@ -6,7 +6,8 @@
       <div class="row">
          <p><h4>
             This page is here to describe all of the functions of the WebUI, and give 
-            some pointers on best practices.
+            some pointers on best practices. Check back here from time to time as more 
+	    will be added with future updates.
          </p></h4>
       </div><!-- /.row -->
    </div><!-- /.padding -->
